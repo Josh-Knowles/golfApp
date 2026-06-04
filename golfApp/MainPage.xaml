@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="golfApp.MainPage">
+    <VerticalStackLayout
+        Padding="30"
+        Spacing="25"
+        VerticalOptions="Center">
+
+        <Label
+            Text="Golf Score Tracker"
+            FontSize="40"
+            HorizontalOptions="Center"
+            HorizontalTextAlignment="Center"
+            FontAttributes="Bold"/>
+
+        <Button
+            BackgroundColor="DarkGreen"
+            Text="9 Holes"
+            TextColor="White"
+            HeightRequest="60"
+            FontSize="24"
+            Clicked="Button_Clicked"/>
+
+        <Button
+            BackgroundColor="DarkGreen"
+            x:Name="EighteenHolesButton"
+            Text="18 Holes"
+            TextColor="white"
+            HeightRequest="60"
+            FontSize="24"
+            Clicked="EighteenHolesButton_Clicked"/>
+
+    </VerticalStackLayout>
+
+</ContentPage>
