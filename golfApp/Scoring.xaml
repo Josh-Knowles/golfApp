@@ -60,9 +60,10 @@
            HorizontalOptions="Center"
            Padding="12"
            Text="Par 4"/>
-            <Entry Grid.Column="2" 
+            <Entry x:Name="entryHole3" Grid.Column="2" 
            HorizontalOptions="Center"
-           Placeholder="Enter Score" Keyboard="Numeric"/>
+           Placeholder="Enter Score" Keyboard="Numeric"
+                   Completed="entryHole3_Completed"/>
         </Grid>
         
         <Grid BackgroundColor="DarkGreen">
@@ -79,9 +80,10 @@
            HorizontalOptions="Center"
            Padding="12"
            Text="Par 3"/>
-            <Entry Grid.Column="2" 
+            <Entry x:Name="entryHole4" Grid.Column="2" 
            HorizontalOptions="Center"
-           Placeholder="Enter Score" Keyboard="Numeric"/>
+           Placeholder="Enter Score" Keyboard="Numeric"
+                   Completed="entryHole4_Completed"/>
         </Grid>
         
         <Grid BackgroundColor="DarkGreen">
@@ -98,9 +100,10 @@
            HorizontalOptions="Center"
            Padding="12"
            Text="Par 4"/>
-            <Entry Grid.Column="2" 
+            <Entry x:Name="entryHole5" Grid.Column="2" 
            HorizontalOptions="Center"
-           Placeholder="Enter Score" Keyboard="Numeric"/>
+           Placeholder="Enter Score" Keyboard="Numeric"
+                   Completed="entryHole5_Completed"/>
         </Grid>
         
         <Grid BackgroundColor="DarkGreen">
@@ -117,8 +120,9 @@
            HorizontalOptions="Center"
            Padding="12"
            Text="Par 4"/>
-           <Entry Grid.Column="2" 
-           Placeholder="Enter Score" Keyboard="Numeric"/>
+           <Entry x:Name="enrtyHole6" Grid.Column="2" 
+           Placeholder="Enter Score" Keyboard="Numeric"
+                  Completed="enrtyHole6_Completed"/>
         </Grid>
         
         <Grid BackgroundColor="DarkGreen">
@@ -135,9 +139,10 @@
            HorizontalOptions="Center"
            Padding="12"
            Text="Par 3"/>
-            <Entry Grid.Column="2" 
+            <Entry x:Name="entryHole7" Grid.Column="2" 
            HorizontalOptions="Center"
-           Placeholder="Enter Score" Keyboard="Numeric"/>
+           Placeholder="Enter Score" Keyboard="Numeric"
+                   Completed="entryHole7_Completed"/>
         </Grid>
         
         <Grid BackgroundColor="DarkGreen">
@@ -154,9 +159,10 @@
            HorizontalOptions="Center"
            Padding="12"
            Text="Par 5"/>
-            <Entry Grid.Column="2" 
+            <Entry x:Name="entryHole8" Grid.Column="2" 
            HorizontalOptions="Center"
-           Placeholder="Enter Score" Keyboard="Numeric"/>
+           Placeholder="Enter Score" Keyboard="Numeric"
+                   Completed="entryHole8_Completed"/>
         </Grid>
         
         <Grid BackgroundColor="DarkGreen">
@@ -173,9 +179,10 @@
            HorizontalOptions="Center"
            Padding="12"
            Text="Par 4"/>
-            <Entry Grid.Column="2" 
+            <Entry x:Name="entryHole9" Grid.Column="2" 
            HorizontalOptions="Center"
-           Placeholder="Enter Score" Keyboard="Numeric"/>
+           Placeholder="Enter Score" Keyboard="Numeric"
+                   Completed="entryHole9_Completed"/>
         </Grid>
 
         <Grid BackgroundColor="DarkGreen">
