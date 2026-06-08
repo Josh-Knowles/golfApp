@@ -120,9 +120,9 @@
            HorizontalOptions="Center"
            Padding="12"
            Text="Par 4"/>
-           <Entry x:Name="enrtyHole6" Grid.Column="2" 
+           <Entry x:Name="entryHole6" Grid.Column="2" 
            Placeholder="Enter Score" Keyboard="Numeric"
-                  Completed="enrtyHole6_Completed"/>
+                   Completed="entryHole6_Completed"/>
         </Grid>
         
         <Grid BackgroundColor="DarkGreen">
