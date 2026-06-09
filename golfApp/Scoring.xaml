@@ -15,7 +15,7 @@
                    HorizontalOptions="Center"
                    Padding="12"
                    Text="Hole 1"/>
-            <Label Grid.Column="1"
+            <Label x:Name="lblHole1Par" Grid.Column="1"
                    HorizontalOptions="Center"
                    Padding="12"
                    Text="Par 4"/>
@@ -36,7 +36,7 @@
            HorizontalOptions="Center"
            Padding="12"
            Text="Hole 2"/>
-            <Label Grid.Column="1"
+            <Label x:Name="lblHole2Par" Grid.Column="1"
            HorizontalOptions="Center"
            Padding="12"
            Text="Par 4"/>
@@ -56,7 +56,7 @@
            HorizontalOptions="Center"
            Padding="12"
            Text="Hole 3"/>
-            <Label Grid.Column="1"
+            <Label x:Name="lblHole3Par" Grid.Column="1"
            HorizontalOptions="Center"
            Padding="12"
            Text="Par 4"/>
@@ -189,7 +189,13 @@
             <Label x:Name="lblTotalScore" HorizontalOptions="Center"
                    Padding="12"
                    Text="Total Score: 0"/>
+			<label x:Name="lblToPar" Grid.Row="1" HorizontalOptions="Center"
+                   Padding="12"
+                   Text="To par +-: 0"/>
+			
+			
         </Grid>
+	
         
 
 

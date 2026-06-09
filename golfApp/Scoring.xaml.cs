@@ -10,13 +10,14 @@ public partial class Scoring : ContentPage
 
     private void entryHole1_Completed(object sender, EventArgs e)
     {
-		int scoreHole1 = int.Parse(entryHole1.Text);
+		int scoreHole1 = Convert.ToInt32(entryHole1.Text);
 		lblTotalScore.Text = "Total score: " + scoreHole1.ToString();
+        UpdateToPar(scoreHole1, Convert.ToInt32(lblHole1Par.Text.Replace("Par ", "")));
     }
 
     private void entryHole2_Completed(object sender, EventArgs e)
     {
-		int scoreHole2 = int.Parse(entryHole2.Text);
+		int scoreHole2 = Convert.ToInt32(entryHole2.Text);
         UpdateTotal(scoreHole2);
         
 		
@@ -28,6 +29,16 @@ public partial class Scoring : ContentPage
         int totalScore = holeScore + previousTotal;
         lblTotalScore.Text = "Total score: " + totalScore.ToString();
         holeScore = 0;
+
+    }
+    private void UpdateToPar(int holeScore, int holePar)
+    {
+
+        int previousToPar = Convert.ToInt32(lblToPar.Text.Replace("To par +-: ", ""));
+        
+        int scoreDifference = holeScore - holePar;
+        int newToPar = previousToPar + scoreDifference;
+        lblToPar.Text = "To par +-: " + newToPar.ToString();
 
     }
 
