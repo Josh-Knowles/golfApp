@@ -189,7 +189,7 @@
             <Label x:Name="lblTotalScore" HorizontalOptions="Center"
                    Padding="12"
                    Text="Total Score: 0"/>
-			<label x:Name="lblToPar" Grid.Row="1" HorizontalOptions="Center"
+			<label x:Name="lblScoreToPar" Grid.Row="1" HorizontalOptions="Center"
                    Padding="12"
                    Text="To par +-: 0"/>
 			

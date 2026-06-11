@@ -34,7 +34,7 @@ public partial class Scoring : ContentPage
     private void UpdateToPar(int holeScore, int holePar)
     {
 
-        int previousToPar = Convert.ToInt32(lblToPar.Text.Replace("To par +-: ", ""));
+        int previousToPar = Convert.ToInt32(lblScoreToPar.Text.Replace("To par +-: ", ""));
         
         int scoreDifference = holeScore - holePar;
         int newToPar = previousToPar + scoreDifference;
