@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="golfApp.Scoring"
-             Title="Scoring">
+             x:Class="golfApp.scoring18"
+             Title="scoring18">
     <VerticalStackLayout>
-
         <Grid BackgroundColor="DarkGreen">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0.33*" />
@@ -12,20 +11,20 @@
                 <ColumnDefinition Width="0.33*" />
             </Grid.ColumnDefinitions>
             <Label Grid.Column="0"
-                   HorizontalOptions="Center"
-                   Padding="12"
-                   Text="Hole 1"/>
+           HorizontalOptions="Center"
+           Padding="12"
+           Text="Hole 1"/>
             <Label x:Name="lblHole1Par" Grid.Column="1"
-                   HorizontalOptions="Center"
-                   Padding="12"
-                   Text="Par 4"/>
+           HorizontalOptions="Center"
+           Padding="12"
+           Text="Par 4"/>
             <Entry x:Name="entryHole1" Grid.Column="2" 
-                   HorizontalOptions="Center"
-                   Placeholder="Enter Score" Keyboard="Numeric"
-                   Completed="entryHole1_Completed"/>
-            
+           HorizontalOptions="Center"
+           Placeholder="Enter Score" Keyboard="Numeric"
+           Completed="entryHole1_Completed"/>
+
         </Grid>
-        
+
         <Grid BackgroundColor="DarkGreen" >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0.33*" />
@@ -33,19 +32,19 @@
                 <ColumnDefinition Width="0.33*" />
             </Grid.ColumnDefinitions>
             <Label Grid.Column="0"
-           HorizontalOptions="Center"
-           Padding="12"
-           Text="Hole 2"/>
+   HorizontalOptions="Center"
+   Padding="12"
+   Text="Hole 2"/>
             <Label x:Name="lblHole2Par" Grid.Column="1"
-           HorizontalOptions="Center"
-           Padding="12"
-           Text="Par 4"/>
+   HorizontalOptions="Center"
+   Padding="12"
+   Text="Par 4"/>
             <Entry x:Name="entryHole2" Grid.Column="2" 
-           HorizontalOptions="Center"
-           Placeholder="Enter Score" Keyboard="Numeric"
-           Completed="entryHole2_Completed"/>
+   HorizontalOptions="Center"
+   Placeholder="Enter Score" Keyboard="Numeric"
+   Completed="entryHole2_Completed"/>
         </Grid>
-        
+
         <Grid BackgroundColor="DarkGreen">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0.33*" />
@@ -53,19 +52,19 @@
                 <ColumnDefinition Width="0.33*" />
             </Grid.ColumnDefinitions>
             <Label Grid.Column="0"
-           HorizontalOptions="Center"
-           Padding="12"
-           Text="Hole 3"/>
+   HorizontalOptions="Center"
+   Padding="12"
+   Text="Hole 3"/>
             <Label x:Name="lblHole3Par" Grid.Column="1"
-           HorizontalOptions="Center"
-           Padding="12"
-           Text="Par 4"/>
+   HorizontalOptions="Center"
+   Padding="12"
+   Text="Par 4"/>
             <Entry x:Name="entryHole3" Grid.Column="2" 
-           HorizontalOptions="Center"
-           Placeholder="Enter Score" Keyboard="Numeric"
-                   Completed="entryHole3_Completed"/>
+   HorizontalOptions="Center"
+   Placeholder="Enter Score" Keyboard="Numeric"
+           Completed="entryHole3_Completed"/>
         </Grid>
-        
+
         <Grid BackgroundColor="DarkGreen">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0.33*" />
@@ -73,19 +72,19 @@
                 <ColumnDefinition Width="0.33*" />
             </Grid.ColumnDefinitions>
             <Label Grid.Column="0"
-           HorizontalOptions="Center"
-           Padding="12"
-           Text="Hole 4"/>
+   HorizontalOptions="Center"
+   Padding="12"
+   Text="Hole 4"/>
             <Label Grid.Column="1"
-           HorizontalOptions="Center"
-           Padding="12"
-           Text="Par 3"/>
+   HorizontalOptions="Center"
+   Padding="12"
+   Text="Par 3"/>
             <Entry x:Name="entryHole4" Grid.Column="2" 
-           HorizontalOptions="Center"
-           Placeholder="Enter Score" Keyboard="Numeric"
-                   Completed="entryHole4_Completed"/>
+   HorizontalOptions="Center"
+   Placeholder="Enter Score" Keyboard="Numeric"
+           Completed="entryHole4_Completed"/>
         </Grid>
-        
+
         <Grid BackgroundColor="DarkGreen">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0.33*" />
@@ -93,19 +92,19 @@
                 <ColumnDefinition Width="0.33*" />
             </Grid.ColumnDefinitions>
             <Label Grid.Column="0"
-           HorizontalOptions="Center"
-           Padding="12"
-           Text="Hole 5"/>
+   HorizontalOptions="Center"
+   Padding="12"
+   Text="Hole 5"/>
             <Label Grid.Column="1"
-           HorizontalOptions="Center"
-           Padding="12"
-           Text="Par 4"/>
+   HorizontalOptions="Center"
+   Padding="12"
+   Text="Par 4"/>
             <Entry x:Name="entryHole5" Grid.Column="2" 
-           HorizontalOptions="Center"
-           Placeholder="Enter Score" Keyboard="Numeric"
-                   Completed="entryHole5_Completed"/>
+   HorizontalOptions="Center"
+   Placeholder="Enter Score" Keyboard="Numeric"
+           Completed="entryHole5_Completed"/>
         </Grid>
-        
+
         <Grid BackgroundColor="DarkGreen">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0.33*" />
@@ -113,18 +112,18 @@
                 <ColumnDefinition Width="0.33*" />
             </Grid.ColumnDefinitions>
             <Label Grid.Column="0"
-           HorizontalOptions="Center"
-           Padding="12"
-           Text="Hole 6"/>
+   HorizontalOptions="Center"
+   Padding="12"
+   Text="Hole 6"/>
             <Label Grid.Column="1"
-           HorizontalOptions="Center"
-           Padding="12"
-           Text="Par 4"/>
-           <Entry x:Name="entryHole6" Grid.Column="2" 
-           Placeholder="Enter Score" Keyboard="Numeric"
-                   Completed="entryHole6_Completed"/>
+   HorizontalOptions="Center"
+   Padding="12"
+   Text="Par 4"/>
+            <Entry x:Name="entryHole6" Grid.Column="2" 
+   Placeholder="Enter Score" Keyboard="Numeric"
+           Completed="entryHole6_Completed"/>
         </Grid>
-        
+
         <Grid BackgroundColor="DarkGreen">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0.33*" />
@@ -132,19 +131,19 @@
                 <ColumnDefinition Width="0.33*" />
             </Grid.ColumnDefinitions>
             <Label Grid.Column="0"
-           HorizontalOptions="Center"
-           Padding="12"
-           Text="Hole 7"/>
+   HorizontalOptions="Center"
+   Padding="12"
+   Text="Hole 7"/>
             <Label Grid.Column="1"
-           HorizontalOptions="Center"
-           Padding="12"
-           Text="Par 3"/>
+   HorizontalOptions="Center"
+   Padding="12"
+   Text="Par 3"/>
             <Entry x:Name="entryHole7" Grid.Column="2" 
-           HorizontalOptions="Center"
-           Placeholder="Enter Score" Keyboard="Numeric"
-                   Completed="entryHole7_Completed"/>
+   HorizontalOptions="Center"
+   Placeholder="Enter Score" Keyboard="Numeric"
+           Completed="entryHole7_Completed"/>
         </Grid>
-        
+
         <Grid BackgroundColor="DarkGreen">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0.33*" />
@@ -152,19 +151,19 @@
                 <ColumnDefinition Width="0.33*" />
             </Grid.ColumnDefinitions>
             <Label Grid.Column="0"
-           HorizontalOptions="Center"
-           Padding="12"
-           Text="Hole 8"/>
+   HorizontalOptions="Center"
+   Padding="12"
+   Text="Hole 8"/>
             <Label Grid.Column="1"
-           HorizontalOptions="Center"
-           Padding="12"
-           Text="Par 5"/>
+   HorizontalOptions="Center"
+   Padding="12"
+   Text="Par 5"/>
             <Entry x:Name="entryHole8" Grid.Column="2" 
-           HorizontalOptions="Center"
-           Placeholder="Enter Score" Keyboard="Numeric"
-                   Completed="entryHole8_Completed"/>
+   HorizontalOptions="Center"
+   Placeholder="Enter Score" Keyboard="Numeric"
+           Completed="entryHole8_Completed"/>
         </Grid>
-        
+
         <Grid BackgroundColor="DarkGreen">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0.33*" />
@@ -172,29 +171,28 @@
                 <ColumnDefinition Width="0.33*" />
             </Grid.ColumnDefinitions>
             <Label Grid.Column="0"
-           HorizontalOptions="Center"
-           Padding="12"
-           Text="Hole 9"/>
+   HorizontalOptions="Center"
+   Padding="12"
+   Text="Hole 9"/>
             <Label Grid.Column="1"
-           HorizontalOptions="Center"
-           Padding="12"
-           Text="Par 4"/>
+   HorizontalOptions="Center"
+   Padding="12"
+   Text="Par 4"/>
             <Entry x:Name="entryHole9" Grid.Column="2" 
-           HorizontalOptions="Center"
-           Placeholder="Enter Score" Keyboard="Numeric"
-                   Completed="entryHole9_Completed"/>
+   HorizontalOptions="Center"
+   Placeholder="Enter Score" Keyboard="Numeric"
+           Completed="entryHole9_Completed"/>
         </Grid>
+        
+
 
         <Grid BackgroundColor="DarkGreen">
             <Label x:Name="lblTotalScore" HorizontalOptions="Center"
-                   Padding="12"
-                   Text="Total Score: 0"/>
-			
-			
-        </Grid>
-	
-        
+           Padding="12"
+           Text="Total Score: 0"/>
 
+
+        </Grid>
 
 
     </VerticalStackLayout>

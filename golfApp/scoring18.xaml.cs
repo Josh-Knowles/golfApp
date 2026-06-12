@@ -1,13 +1,11 @@
 namespace golfApp;
 
-public partial class Scoring : ContentPage
+public partial class scoring18 : ContentPage
 {
-	public Scoring()
+	public scoring18()
 	{
-		InitializeComponent();
-		
-	}
-
+        InitializeComponent();
+    }
     private void entryHole1_Completed(object sender, EventArgs e)
     {
         UpdateTotal();
@@ -17,8 +15,8 @@ public partial class Scoring : ContentPage
     {
         UpdateTotal();
     }
-	private void UpdateTotal()
-	{
+    private void UpdateTotal()
+    {
         int totalScore = 0;
 
         int scoreHole1 = Convert.ToInt32(entryHole1.Text);
@@ -51,7 +49,7 @@ public partial class Scoring : ContentPage
         lblTotalScore.Text = "Total Score: " + totalScore.ToString();
 
     }
-    
+
 
     private void entryHole3_Completed(object sender, EventArgs e)
     {

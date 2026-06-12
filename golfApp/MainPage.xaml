@@ -26,7 +26,7 @@
             BackgroundColor="DarkGreen"
             x:Name="EighteenHolesButton"
             Text="18 Holes"
-            TextColor="Black"
+            TextColor="White"
             HeightRequest="60"
             FontSize="24"
             Clicked="EighteenHolesButton_Clicked"/>
