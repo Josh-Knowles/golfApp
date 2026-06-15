@@ -50,6 +50,56 @@ public partial class Scoring : ContentPage
 
         lblTotalScore.Text = "Total Score: " + totalScore.ToString();
 
+        int toPar = 0;
+        if (scoreHole1 != 0)
+        { toPar = scoreHole1 - 4; }
+        
+        if (scoreHole2 != 0) 
+        { toPar = scoreHole2 - 4; }
+
+        if (scoreHole3 != 0)
+        { toPar = scoreHole3 - 4; }
+
+        if (scoreHole4 != 0)
+        {
+            toPar = scoreHole4 - 3;
+        }
+        if (scoreHole5 != 0)
+        {
+            toPar = scoreHole5 - 4;
+        }
+        if (scoreHole6 != 0)
+        {
+            toPar = scoreHole6 - 4;
+        }
+        if (scoreHole7 != 0)
+        {
+            toPar = scoreHole7 - 3;
+        }
+        if (scoreHole8 != 0)
+        {
+            toPar = scoreHole8 - 5;
+        }
+        if (scoreHole9 != 0)
+        {
+            toPar = scoreHole9 - 4;
+        }
+        if (toPar == 0)
+        {
+            lblToPar.Text = "To Par: E";
+        }
+        else
+        {
+            if (toPar > 0) 
+            {
+                lblToPar.Text = "To Par: +" + toPar.ToString();
+            }
+            else
+            {
+                lblToPar.Text = "To Par: " + toPar.ToString();
+            }
+        }
+        
     }
     
 

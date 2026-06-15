@@ -186,10 +186,16 @@
         </Grid>
 
         <Grid BackgroundColor="DarkGreen">
-            <Label x:Name="lblTotalScore" HorizontalOptions="Center"
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="0.5*" />
+				<ColumnDefinition Width="0.5*" />
+			</Grid.ColumnDefinitions>
+            <Label x:Name="lblTotalScore" Grid.Column="0" HorizontalOptions="Center"
                    Padding="12"
                    Text="Total Score: 0"/>
-			
+			<Label x:Name="lblToPar" Grid.Column="1" HorizontalOptions="Center"
+                   Padding="12"
+                   Text="To Par: 0"/>
 			
         </Grid>
 	
