@@ -3,197 +3,395 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="golfApp.scoring18"
              Title="scoring18">
-    <VerticalStackLayout>
-        <Grid BackgroundColor="DarkGreen">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.33*" />
-                <ColumnDefinition Width="0.33*" />
-                <ColumnDefinition Width="0.33*" />
-            </Grid.ColumnDefinitions>
-            <Label Grid.Column="0"
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Grid BackgroundColor="DarkGreen">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.33*" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0"
            HorizontalOptions="Center"
            Padding="12"
            Text="Hole 1"/>
-            <Label x:Name="lblHole1Par" Grid.Column="1"
+                <Label x:Name="lblHole1Par" Grid.Column="1"
            HorizontalOptions="Center"
            Padding="12"
            Text="Par 4"/>
-            <Entry x:Name="entryHole1" Grid.Column="2" 
+                <Entry x:Name="entryHole1" Grid.Column="2" 
            HorizontalOptions="Center"
            Placeholder="Enter Score" Keyboard="Numeric"
            Completed="entryHole1_Completed"/>
 
-        </Grid>
+            </Grid>
 
-        <Grid BackgroundColor="DarkGreen" >
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.33*" />
-                <ColumnDefinition Width="0.33*" />
-                <ColumnDefinition Width="0.33*" />
-            </Grid.ColumnDefinitions>
-            <Label Grid.Column="0"
+            <Grid BackgroundColor="DarkGreen" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.33*" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0"
    HorizontalOptions="Center"
    Padding="12"
    Text="Hole 2"/>
-            <Label x:Name="lblHole2Par" Grid.Column="1"
+                <Label x:Name="lblHole2Par" Grid.Column="1"
    HorizontalOptions="Center"
    Padding="12"
    Text="Par 4"/>
-            <Entry x:Name="entryHole2" Grid.Column="2" 
+                <Entry x:Name="entryHole2" Grid.Column="2" 
    HorizontalOptions="Center"
    Placeholder="Enter Score" Keyboard="Numeric"
    Completed="entryHole2_Completed"/>
-        </Grid>
+            </Grid>
 
-        <Grid BackgroundColor="DarkGreen">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.33*" />
-                <ColumnDefinition Width="0.33*" />
-                <ColumnDefinition Width="0.33*" />
-            </Grid.ColumnDefinitions>
-            <Label Grid.Column="0"
+            <Grid BackgroundColor="DarkGreen">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.33*" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0"
    HorizontalOptions="Center"
    Padding="12"
    Text="Hole 3"/>
-            <Label x:Name="lblHole3Par" Grid.Column="1"
+                <Label x:Name="lblHole3Par" Grid.Column="1"
    HorizontalOptions="Center"
    Padding="12"
    Text="Par 4"/>
-            <Entry x:Name="entryHole3" Grid.Column="2" 
+                <Entry x:Name="entryHole3" Grid.Column="2" 
    HorizontalOptions="Center"
    Placeholder="Enter Score" Keyboard="Numeric"
            Completed="entryHole3_Completed"/>
-        </Grid>
+            </Grid>
 
-        <Grid BackgroundColor="DarkGreen">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.33*" />
-                <ColumnDefinition Width="0.33*" />
-                <ColumnDefinition Width="0.33*" />
-            </Grid.ColumnDefinitions>
-            <Label Grid.Column="0"
+            <Grid BackgroundColor="DarkGreen">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.33*" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0"
    HorizontalOptions="Center"
    Padding="12"
    Text="Hole 4"/>
-            <Label Grid.Column="1"
+                <Label x:Name="lblHole4Par" Grid.Column="1"
    HorizontalOptions="Center"
    Padding="12"
    Text="Par 3"/>
-            <Entry x:Name="entryHole4" Grid.Column="2" 
+                <Entry x:Name="entryHole4" Grid.Column="2" 
    HorizontalOptions="Center"
    Placeholder="Enter Score" Keyboard="Numeric"
            Completed="entryHole4_Completed"/>
-        </Grid>
+            </Grid>
 
-        <Grid BackgroundColor="DarkGreen">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.33*" />
-                <ColumnDefinition Width="0.33*" />
-                <ColumnDefinition Width="0.33*" />
-            </Grid.ColumnDefinitions>
-            <Label Grid.Column="0"
+            <Grid BackgroundColor="DarkGreen">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.33*" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0"
    HorizontalOptions="Center"
    Padding="12"
    Text="Hole 5"/>
-            <Label Grid.Column="1"
+                <Label x:Name="lblHole5Par" Grid.Column="1"
    HorizontalOptions="Center"
    Padding="12"
    Text="Par 4"/>
-            <Entry x:Name="entryHole5" Grid.Column="2" 
+                <Entry x:Name="entryHole5" Grid.Column="2" 
    HorizontalOptions="Center"
    Placeholder="Enter Score" Keyboard="Numeric"
            Completed="entryHole5_Completed"/>
-        </Grid>
+            </Grid>
 
-        <Grid BackgroundColor="DarkGreen">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.33*" />
-                <ColumnDefinition Width="0.33*" />
-                <ColumnDefinition Width="0.33*" />
-            </Grid.ColumnDefinitions>
-            <Label Grid.Column="0"
+            <Grid BackgroundColor="DarkGreen">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.33*" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0"
    HorizontalOptions="Center"
    Padding="12"
    Text="Hole 6"/>
-            <Label Grid.Column="1"
+                <Label x:Name="lblHole6Par" Grid.Column="1"
    HorizontalOptions="Center"
    Padding="12"
    Text="Par 4"/>
-            <Entry x:Name="entryHole6" Grid.Column="2" 
+                <Entry x:Name="entryHole6" Grid.Column="2" 
    Placeholder="Enter Score" Keyboard="Numeric"
            Completed="entryHole6_Completed"/>
-        </Grid>
+            </Grid>
 
-        <Grid BackgroundColor="DarkGreen">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.33*" />
-                <ColumnDefinition Width="0.33*" />
-                <ColumnDefinition Width="0.33*" />
-            </Grid.ColumnDefinitions>
-            <Label Grid.Column="0"
+            <Grid BackgroundColor="DarkGreen">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.33*" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0"
    HorizontalOptions="Center"
    Padding="12"
    Text="Hole 7"/>
-            <Label Grid.Column="1"
+                <Label x:Name="lblHole7Par" Grid.Column="1"
    HorizontalOptions="Center"
    Padding="12"
    Text="Par 3"/>
-            <Entry x:Name="entryHole7" Grid.Column="2" 
+                <Entry x:Name="entryHole7" Grid.Column="2" 
    HorizontalOptions="Center"
    Placeholder="Enter Score" Keyboard="Numeric"
            Completed="entryHole7_Completed"/>
-        </Grid>
+            </Grid>
 
-        <Grid BackgroundColor="DarkGreen">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.33*" />
-                <ColumnDefinition Width="0.33*" />
-                <ColumnDefinition Width="0.33*" />
-            </Grid.ColumnDefinitions>
-            <Label Grid.Column="0"
+            <Grid BackgroundColor="DarkGreen">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.33*" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0"
    HorizontalOptions="Center"
    Padding="12"
    Text="Hole 8"/>
-            <Label Grid.Column="1"
+                <Label x:Name="lblHole8Par" Grid.Column="1"
    HorizontalOptions="Center"
    Padding="12"
    Text="Par 5"/>
-            <Entry x:Name="entryHole8" Grid.Column="2" 
+                <Entry x:Name="entryHole8" Grid.Column="2" 
    HorizontalOptions="Center"
    Placeholder="Enter Score" Keyboard="Numeric"
            Completed="entryHole8_Completed"/>
-        </Grid>
+            </Grid>
 
-        <Grid BackgroundColor="DarkGreen">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.33*" />
-                <ColumnDefinition Width="0.33*" />
-                <ColumnDefinition Width="0.33*" />
-            </Grid.ColumnDefinitions>
-            <Label Grid.Column="0"
+            <Grid BackgroundColor="DarkGreen">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.33*" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0"
    HorizontalOptions="Center"
    Padding="12"
    Text="Hole 9"/>
-            <Label Grid.Column="1"
+                <Label x:Name="lblHole9Par" Grid.Column="1"
    HorizontalOptions="Center"
    Padding="12"
    Text="Par 4"/>
-            <Entry x:Name="entryHole9" Grid.Column="2" 
+                <Entry x:Name="entryHole9" Grid.Column="2" 
    HorizontalOptions="Center"
    Placeholder="Enter Score" Keyboard="Numeric"
            Completed="entryHole9_Completed"/>
-        </Grid>
-        
+            </Grid>
+
+            <Grid BackgroundColor="DarkGreen">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.33*" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0"
+               HorizontalOptions="Center"
+               Padding="12"
+               Text="Hole 10"/>
+                <Label x:Name="lblHole10Par" Grid.Column="1"
+               HorizontalOptions="Center"
+               Padding="12"
+               Text="Par 3"/>
+                <Entry x:Name="entryHole10" Grid.Column="2" 
+               HorizontalOptions="Center"
+               Placeholder="Enter Score" Keyboard="Numeric"
+               Completed="entryHole10_Completed"/>
+            </Grid>
 
 
-        <Grid BackgroundColor="DarkGreen">
-            <Label x:Name="lblTotalScore" HorizontalOptions="Center"
+            <Grid BackgroundColor="DarkGreen">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.33*" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0"
+               HorizontalOptions="Center"
+               Padding="12"
+               Text="Hole 11"/>
+                <Label x:Name="lblHole11Par" Grid.Column="1"
+               HorizontalOptions="Center"
+               Padding="12"
+               Text="Par 5"/>
+                <Entry x:Name="entryHole11" Grid.Column="2" 
+               HorizontalOptions="Center"
+               Placeholder="Enter Score" Keyboard="Numeric"
+               Completed="entryHole11_Completed"/>
+            </Grid>
+
+
+            <Grid BackgroundColor="DarkGreen">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.33*" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0"
+               HorizontalOptions="Center"
+               Padding="12"
+               Text="Hole 12"/>
+                <Label x:Name="lblHole12Par" Grid.Column="1"
+               HorizontalOptions="Center"
+               Padding="12"
+               Text="Par 4"/>
+                <Entry x:Name="entryHole12" Grid.Column="2" 
+               HorizontalOptions="Center"
+               Placeholder="Enter Score" Keyboard="Numeric"
+               Completed="entryHole12_Completed"/>
+            </Grid>
+
+
+            <Grid BackgroundColor="DarkGreen">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.33*" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0"
+               HorizontalOptions="Center"
+               Padding="12"
+               Text="Hole 13"/>
+                <Label x:Name="lblHole13Par" Grid.Column="1"
+               HorizontalOptions="Center"
+               Padding="12"
+               Text="Par 4"/>
+                <Entry x:Name="entryHole13" Grid.Column="2" 
+               HorizontalOptions="Center"
+               Placeholder="Enter Score" Keyboard="Numeric"
+               Completed="entryHole13_Completed"/>
+            </Grid>
+
+
+            <Grid BackgroundColor="DarkGreen">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.33*" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0"
+               HorizontalOptions="Center"
+               Padding="12"
+               Text="Hole 14"/>
+                <Label x:Name="lblHole14Par" Grid.Column="1"
+               HorizontalOptions="Center"
+               Padding="12"
+               Text="Par 3"/>
+                <Entry x:Name="entryHole14" Grid.Column="2" 
+               HorizontalOptions="Center"
+               Placeholder="Enter Score" Keyboard="Numeric"
+               Completed="entryHole14_Completed"/>
+            </Grid>
+
+
+            <Grid BackgroundColor="DarkGreen">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.33*" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0"
+               HorizontalOptions="Center"
+               Padding="12"
+               Text="Hole 15"/>
+                <Label x:Name="lblHole15Par" Grid.Column="1"
+               HorizontalOptions="Center"
+               Padding="12"
+               Text="Par 5"/>
+                <Entry x:Name="entryHole15" Grid.Column="2" 
+               HorizontalOptions="Center"
+               Placeholder="Enter Score" Keyboard="Numeric"
+               Completed="entryHole15_Completed"/>
+            </Grid>
+
+
+            <Grid BackgroundColor="DarkGreen">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.33*" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0"
+               HorizontalOptions="Center"
+               Padding="12"
+               Text="Hole 16"/>
+                <Label x:Name="lblHole16Par" Grid.Column="1"
+               HorizontalOptions="Center"
+               Padding="12"
+               Text="Par 4"/>
+                <Entry x:Name="entryHole16" Grid.Column="2" 
+               HorizontalOptions="Center"
+               Placeholder="Enter Score" Keyboard="Numeric"
+               Completed="entryHole16_Completed"/>
+            </Grid>
+
+            <Grid BackgroundColor="DarkGreen">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.33*" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0"
+               HorizontalOptions="Center"
+               Padding="12"
+               Text="Hole 17"/>
+                <Label x:Name="lblHole17Par" Grid.Column="1"
+               HorizontalOptions="Center"
+               Padding="12"
+               Text="Par 4"/>
+                <Entry x:Name="entryHole17" Grid.Column="2" 
+               HorizontalOptions="Center"
+               Placeholder="Enter Score" Keyboard="Numeric"
+               Completed="entryHole17_Completed"/>
+            </Grid>
+
+            <Grid BackgroundColor="DarkGreen">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.33*" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0"
+               HorizontalOptions="Center"
+               Padding="12"
+               Text="Hole 18"/>
+                <Label x:Name="lblHole18Par" Grid.Column="1"
+               HorizontalOptions="Center"
+               Padding="12"
+               Text="Par 4"/>
+                <Entry x:Name="entryHole18" Grid.Column="2" 
+               HorizontalOptions="Center"
+               Placeholder="Enter Score" Keyboard="Numeric"
+               Completed="entryHole18_Completed"/>
+            </Grid>
+
+            <Grid BackgroundColor="DarkGreen">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="0.5*" />
+                </Grid.ColumnDefinitions>
+                <Label x:Name="lblTotalScore" Grid.Column="0" HorizontalOptions="Center"
            Padding="12"
            Text="Total Score: 0"/>
+                <Label x:Name="lblToPar" Grid.Column="1" HorizontalOptions="Center"
+           Padding="12"
+           Text="To Par: 0"/>
+
+            </Grid>
 
 
-        </Grid>
 
 
-    </VerticalStackLayout>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+    
 </ContentPage>

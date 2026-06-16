@@ -52,37 +52,37 @@ public partial class Scoring : ContentPage
 
         int toPar = 0;
         if (scoreHole1 != 0)
-        { toPar = scoreHole1 - 4; }
+        { toPar += (scoreHole1 - Convert.ToInt32(lblHole1Par.Text.Replace("Par ", ""))); }
         
         if (scoreHole2 != 0) 
-        { toPar = scoreHole2 - 4; }
+        { toPar += (scoreHole2 - Convert.ToInt32(lblHole2Par.Text.Replace("Par ", ""))); }
 
         if (scoreHole3 != 0)
-        { toPar = scoreHole3 - 4; }
+        { toPar += (scoreHole3 - Convert.ToInt32(lblHole3Par.Text.Replace("Par ", ""))); }
 
         if (scoreHole4 != 0)
         {
-            toPar = scoreHole4 - 3;
+            toPar += (scoreHole4 - Convert.ToInt32(lblHole4Par.Text.Replace("Par ", "")));
         }
         if (scoreHole5 != 0)
         {
-            toPar = scoreHole5 - 4;
+            toPar += (scoreHole5 - Convert.ToInt32(lblHole5Par.Text.Replace("Par ", "")));
         }
         if (scoreHole6 != 0)
         {
-            toPar = scoreHole6 - 4;
+            toPar += (scoreHole6 - Convert.ToInt32(lblHole6Par.Text.Replace("Par ", "")));
         }
         if (scoreHole7 != 0)
         {
-            toPar = scoreHole7 - 3;
+            toPar += (scoreHole7 - Convert.ToInt32(lblHole7Par.Text.Replace("Par ", "")));
         }
         if (scoreHole8 != 0)
         {
-            toPar = scoreHole8 - 5;
+            toPar += (scoreHole8 - Convert.ToInt32(lblHole8Par.Text.Replace("Par ", "")));
         }
         if (scoreHole9 != 0)
         {
-            toPar = scoreHole9 - 4;
+            toPar += (scoreHole9 - Convert.ToInt32(lblHole9Par.Text.Replace("Par ", "")));
         }
         if (toPar == 0)
         {

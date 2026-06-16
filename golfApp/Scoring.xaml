@@ -76,7 +76,7 @@
            HorizontalOptions="Center"
            Padding="12"
            Text="Hole 4"/>
-            <Label Grid.Column="1"
+            <Label x:Name="lblHole4Par" Grid.Column="1"
            HorizontalOptions="Center"
            Padding="12"
            Text="Par 3"/>
@@ -96,7 +96,7 @@
            HorizontalOptions="Center"
            Padding="12"
            Text="Hole 5"/>
-            <Label Grid.Column="1"
+            <Label x:Name="lblHole5Par" Grid.Column="1"
            HorizontalOptions="Center"
            Padding="12"
            Text="Par 4"/>
@@ -116,7 +116,7 @@
            HorizontalOptions="Center"
            Padding="12"
            Text="Hole 6"/>
-            <Label Grid.Column="1"
+            <Label x:Name="lblHole6Par" Grid.Column="1"
            HorizontalOptions="Center"
            Padding="12"
            Text="Par 4"/>
@@ -135,7 +135,7 @@
            HorizontalOptions="Center"
            Padding="12"
            Text="Hole 7"/>
-            <Label Grid.Column="1"
+            <Label x:Name="lblHole7Par" Grid.Column="1"
            HorizontalOptions="Center"
            Padding="12"
            Text="Par 3"/>
@@ -155,7 +155,7 @@
            HorizontalOptions="Center"
            Padding="12"
            Text="Hole 8"/>
-            <Label Grid.Column="1"
+            <Label x:Name="lblHole8Par" Grid.Column="1"
            HorizontalOptions="Center"
            Padding="12"
            Text="Par 5"/>
@@ -175,7 +175,7 @@
            HorizontalOptions="Center"
            Padding="12"
            Text="Hole 9"/>
-            <Label Grid.Column="1"
+            <Label x:Name="lblHole9Par" Grid.Column="1"
            HorizontalOptions="Center"
            Padding="12"
            Text="Par 4"/>
