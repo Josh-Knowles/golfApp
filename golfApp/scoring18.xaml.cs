@@ -18,7 +18,7 @@ public partial class scoring18 : ContentPage
         ToPar();
     }
     
-    private int TotalScore()
+    public int TotalScore()
     {
         int totalScore = 0;
 
@@ -304,8 +304,30 @@ public partial class scoring18 : ContentPage
 
     }
 
-    private void btnFinishRound_Clicked(object sender, EventArgs e)
+    private async void btnFinishRound_Clicked(object sender, EventArgs e)
     {
+        int[] roundScores = new int[18];
+        roundScores[0] = Convert.ToInt32(entryHole1.Text);
+        roundScores[1] = Convert.ToInt32(entryHole2.Text);
+        roundScores[2] = Convert.ToInt32(entryHole3.Text);
+        roundScores[3] = Convert.ToInt32(entryHole4.Text);
+        roundScores[4] = Convert.ToInt32(entryHole5.Text);
+        roundScores[5] = Convert.ToInt32(entryHole6.Text);
+        roundScores[6] = Convert.ToInt32(entryHole7.Text);
+        roundScores[7] = Convert.ToInt32(entryHole8.Text);
+        roundScores[8] = Convert.ToInt32(entryHole9.Text);
+        roundScores[9] = Convert.ToInt32(entryHole10.Text);
+        roundScores[10] = Convert.ToInt32(entryHole11.Text);
+        roundScores[11] = Convert.ToInt32(entryHole12.Text);
+        roundScores[12] = Convert.ToInt32(entryHole13.Text);
+        roundScores[13] = Convert.ToInt32(entryHole14.Text);
+        roundScores[14] = Convert.ToInt32(entryHole15.Text);
+        roundScores[15] = Convert.ToInt32(entryHole16.Text);
+        roundScores[16] = Convert.ToInt32(entryHole17.Text);
+        roundScores[17] = Convert.ToInt32(entryHole18.Text);
 
+        string roundDate = DateTime.Now.ToString("MM/dd/yyyy");
+        await Navigation.PushAsync(new myRounds(roundScores, roundDate));
+        
     }
 }

@@ -1,25 +1,36 @@
-﻿namespace golfApp
+﻿using SQLite;
+
+namespace golfApp
 {
     public partial class MainPage : ContentPage
     {
 
         int holeAmount;
+        SQLiteConnection sqlite_conn;
         public MainPage()
         {
             InitializeComponent();
-        }
+          
 
-        private async void Button_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new Scoring());
-            
+
 
         }
+        
 
-        private async void EighteenHolesButton_Clicked(object sender, EventArgs e)
+
+
+
+
+
+
+        private async void StartRoundButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new scoring18 ());
-            
+            await Navigation.PushAsync(new RoundSetUp());
+        }
+
+        private async void btnMyRounds_Clicked(object sender, EventArgs e)
+        {
+            //await Navigation.PushAsync(new myRounds());
         }
     }
 }

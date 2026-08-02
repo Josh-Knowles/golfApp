@@ -9,27 +9,30 @@
 
         <Label
             Text="Golf Score Tracker"
+            x:Name="lblTitle"
             FontSize="40"
             HorizontalOptions="Center"
             HorizontalTextAlignment="Center"
             FontAttributes="Bold"/>
-
         <Button
             BackgroundColor="DarkGreen"
-            Text="9 Holes"
+            Text="Start Round"
+            x:Name="StartRoundButton"
             TextColor="White"
             HeightRequest="60"
             FontSize="24"
-            Clicked="Button_Clicked"/>
+            Clicked="StartRoundButton_Clicked"
+             />
 
+        
         <Button
             BackgroundColor="DarkGreen"
-            x:Name="EighteenHolesButton"
-            Text="18 Holes"
+            x:Name="btnMyRounds"
+            Text="My Rounds"
             TextColor="White"
             HeightRequest="60"
             FontSize="24"
-            Clicked="EighteenHolesButton_Clicked"/>
+            Clicked="btnMyRounds_Clicked"/>
 
     </VerticalStackLayout>
 

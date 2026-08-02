@@ -351,7 +351,6 @@
                Placeholder="Enter Score" Keyboard="Numeric"
                Completed="entryHole17_Completed"/>
             </Grid>
-
             <Grid BackgroundColor="DarkGreen">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="0.33*" />
