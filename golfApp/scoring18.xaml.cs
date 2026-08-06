@@ -2,8 +2,10 @@ namespace golfApp;
 
 public partial class scoring18 : ContentPage
 {
-	public scoring18()
+    private string courseName;
+    public scoring18(string course)
 	{
+        courseName = course;
         InitializeComponent();
     }
     private void entryHole1_Completed(object sender, EventArgs e)
@@ -326,8 +328,13 @@ public partial class scoring18 : ContentPage
         roundScores[16] = Convert.ToInt32(entryHole17.Text);
         roundScores[17] = Convert.ToInt32(entryHole18.Text);
 
+        TotalScore();
+        ToPar();
+        String totalScore = lblTotalScore.Text;
+        string toPar = lblToPar.Text;
+        
         string roundDate = DateTime.Now.ToString("MM/dd/yyyy");
-        await Navigation.PushAsync(new myRounds(roundScores, roundDate));
+        await Navigation.PushAsync(new myRounds(roundScores, roundDate, totalScore, toPar, courseName));
         
     }
 }

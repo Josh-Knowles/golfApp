@@ -198,8 +198,14 @@
                    Text="To Par: 0"/>
 			
         </Grid>
-	
-        
+        <Grid>
+            <Button x:Name="btnFinishRound" BackgroundColor="DarkGreen"
+            Text="Finish Round"
+            TextColor="White"
+            Clicked="btnFinishRound_Clicked"/>
+        </Grid>
+
+
 
 
 

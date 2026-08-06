@@ -2,10 +2,11 @@ namespace golfApp;
 
 public partial class Scoring : ContentPage
 {
-	public Scoring()
+    private string courseName;
+    public Scoring(string course)
 	{
 		InitializeComponent();
-		
+		courseName = course;
 	}
 
     private void entryHole1_Completed(object sender, EventArgs e)
@@ -165,5 +166,27 @@ public partial class Scoring : ContentPage
     {
         TotalScore();
         ToPar();
+    }
+
+    private async void btnFinishRound_Clicked(object sender, EventArgs e)
+    {
+        int[] roundScores = new int[9];
+        roundScores[0] = Convert.ToInt32(entryHole1.Text);
+        roundScores[1] = Convert.ToInt32(entryHole2.Text);
+        roundScores[2] = Convert.ToInt32(entryHole3.Text);
+        roundScores[3] = Convert.ToInt32(entryHole4.Text);
+        roundScores[4] = Convert.ToInt32(entryHole5.Text);
+        roundScores[5] = Convert.ToInt32(entryHole6.Text);
+        roundScores[6] = Convert.ToInt32(entryHole7.Text);
+        roundScores[7] = Convert.ToInt32(entryHole8.Text);
+        roundScores[8] = Convert.ToInt32(entryHole9.Text);
+       
+        TotalScore();
+        ToPar();
+        String totalScore = lblTotalScore.Text;
+        string toPar = lblToPar.Text;
+
+        string roundDate = DateTime.Now.ToString("MM/dd/yyyy");
+        await Navigation.PushAsync(new myRounds(roundScores, roundDate, totalScore, toPar, courseName));
     }
 }

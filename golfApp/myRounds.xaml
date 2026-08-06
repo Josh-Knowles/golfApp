@@ -3,16 +3,35 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="golfApp.myRounds"
              Title="myRounds">
-    <VerticalStackLayout>
-        <Label 
-            x:Name="lblScores"
-            Text="scores"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-        <Label
-            x:Name="lblDate"
-            Text="Date"
-            VerticalOptions="Center"
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <Grid BackgroundColor="DarkGreen">
+        <VerticalStackLayout>
+            <Label
+                x:Name="lblDate"
+                Text="Date"
+                VerticalOptions="Center"
+                HorizontalOptions="Center" />
+            <Label
+                x:Name="lblTotal"
+                Text="Total Score"
+                VerticalOptions="Center"
+                HorizontalOptions="Center" />
+            <Label
+                x:Name="lblPar"
+                Text="Par"
+                VerticalOptions="Center"
+                HorizontalOptions="Center" />
+            <Label
+                x:Name="lblCourse"
+                Text="Course"
+                VerticalOptions="Center"
+                HorizontalOptions="Center" />
+            <Label 
+                x:Name="lblScores"
+                Text="scores"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            
+        </VerticalStackLayout>
+    </Grid>
+    
 </ContentPage>
