@@ -2,11 +2,12 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="golfApp.MainPage">
+  <!-- define the layout for the vertical layout -->
     <VerticalStackLayout
         Padding="30"
         Spacing="25"
         VerticalOptions="Center">
-
+<!-- create the title label, round start button and my rounds button to go to their conected pages -->
         <Label
             Text="Golf Score Tracker"
             x:Name="lblTitle"

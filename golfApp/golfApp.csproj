@@ -76,12 +76,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiAsset Update="Resources\Raw\golfDataBase.db">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </MauiAsset>
-	</ItemGroup>
-
-	<ItemGroup>
 	  <MauiXaml Update="myRounds.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

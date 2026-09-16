@@ -3,7 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="golfApp.RoundSetUp"
              Title="RoundSetUp">
+    <!-- sets the layout to vertical stack -->
     <VerticalStackLayout>
+        <!-- create a label for the course selection, and makes a picker to select the oure and amount of rounds -->
         <Label 
             Text="Select Course"
             VerticalOptions="Center" 
@@ -36,7 +38,7 @@
             </Picker.Items>
 
         </Picker>
-
+<!-- creates a button for the user to start the round -->
         <Button
             x:Name="btnRoundSart"
     BackgroundColor="DarkGreen"
