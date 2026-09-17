@@ -23,8 +23,6 @@ public partial class RoundSetUp : ContentPage
                 string[] parts = line.Split(',');
                 string name = parts[0].Trim();
 
-                // Ignore header row
-                if (name == "courseName") continue;
 
                 // Only add course name if it hasn't been added yet
                 if (!courseNames.Contains(name))
