@@ -1,4 +1,3 @@
-courseName,hole,holePar
 Chisholm Links,1,4
 Chisholm Links,2,4
 Chisholm Links,3,4
@@ -17,3 +16,21 @@ Chisholm Links,15,5
 Chisholm Links,16,4
 Chisholm Links,17,4
 Chisholm Links,18,4
+St Clair,1,4
+St Clair,2,4
+St Clair,3,3
+St Clair,4,4
+St Clair,5,4
+St Clair,6,3
+St Clair,7,4
+St Clair,8,5
+St Clair,9,4
+St Clair,10,4
+St Clair,11,3
+St Clair,12,5
+St Clair,13,4
+St Clair,14,4
+St Clair,15,5
+St Clair,16,3
+St Clair,17,4
+St Clair,18,4

@@ -5,49 +5,36 @@ public partial class RoundSetUp : ContentPage
     public RoundSetUp()
     {
         InitializeComponent();
-        
-    }
-    protected override async void OnAppearing()
-    {
-        base.OnAppearing();
-        await LoadCoursesFromCsvAsync();
+        LoadCourses();
     }
 
-    private async Task LoadCoursesFromCsvAsync()
+    private void LoadCourses()
     {
-        try
+        List<string> courseNames = new List<string>();
+
+        // Open the text file using StreamReader
+        using (StreamReader reader = new StreamReader(FileSystem.OpenAppPackageFileAsync("golf.txt").Result))
         {
-            // Open file from MAUI Resources/Raw folder
-            using var stream = await FileSystem.OpenAppPackageFileAsync("golf.csv");
-            using var reader = new StreamReader(stream);
-
-            List<string> courseNames = new List<string>();
-
-            // Skip header line (courseName,hole,holePar)
-            string header = await reader.ReadLineAsync();
-
             string line;
-            while ((line = await reader.ReadLineAsync()) != null)
+            while ((line = reader.ReadLine()) != null)
             {
                 if (string.IsNullOrWhiteSpace(line)) continue;
 
-                string[] values = line.Split(',');
-                string courseName = values[0].Trim();
+                string[] parts = line.Split(',');
+                string name = parts[0].Trim();
 
-                // Add unique course names to list
-                if (!courseNames.Contains(courseName))
+                // Ignore header row
+                if (name == "courseName") continue;
+
+                // Only add course name if it hasn't been added yet
+                if (!courseNames.Contains(name))
                 {
-                    courseNames.Add(courseName);
+                    courseNames.Add(name);
                 }
             }
+        }
 
-            // Populate CoursePicker on UI
-            CoursePicker.ItemsSource = courseNames;
-        }
-        catch (Exception ex)
-        {
-            await DisplayAlert("Error", $"Could not load CSV: {ex.Message}", "OK");
-        }
+        CoursePicker.ItemsSource = courseNames;
     }
 
     private void CoursePicker_SelectedIndexChanged(object sender, EventArgs e)
