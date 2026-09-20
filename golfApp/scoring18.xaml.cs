@@ -7,6 +7,8 @@ public partial class scoring18 : ContentPage
 	{
         courseName = course;
         InitializeComponent();
+        LoadCoursePars();
+
     }
 
     public void LoadCoursePars()

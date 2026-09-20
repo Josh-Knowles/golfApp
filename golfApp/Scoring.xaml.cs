@@ -7,8 +7,37 @@ public partial class Scoring : ContentPage
 	{
 		InitializeComponent();
 		courseName = course;
+        LoadCoursePars();
 	}
+    public void LoadCoursePars()
+    {
+        using (StreamReader reader = new StreamReader(FileSystem.OpenAppPackageFileAsync("golf.txt").Result))
+        {
+            string line;
+            while ((line = reader.ReadLine()) != null)
+            {
+                if (string.IsNullOrWhiteSpace(line)) continue;
+                string[] parts = line.Split(',');
+                string name = parts[0].Trim();
+                if (name == courseName)
+                {
+                    int holeNumber = int.Parse(parts[1].Trim());
+                    int holePar = int.Parse(parts[2].Trim());
 
+                    if (holeNumber == 1) lblHole1Par.Text = "Par" + holePar.ToString();
+                    else if (holeNumber == 2) lblHole2Par.Text = "Par" + holePar.ToString();
+                    else if (holeNumber == 3) lblHole3Par.Text = "Par" + holePar.ToString();
+                    else if (holeNumber == 4) lblHole4Par.Text = "Par" + holePar.ToString();
+                    else if (holeNumber == 5) lblHole5Par.Text = "Par" + holePar.ToString();
+                    else if (holeNumber == 6) lblHole6Par.Text = "Par" + holePar.ToString();
+                    else if (holeNumber == 7) lblHole7Par.Text = "Par" + holePar.ToString();
+                    else if (holeNumber == 8) lblHole8Par.Text = "Par" + holePar.ToString();
+                    else if (holeNumber == 9) lblHole9Par.Text = "Par" + holePar.ToString();
+                    
+                }
+            }
+        }
+    }
     private void entryHole1_Completed(object sender, EventArgs e)
     {
         TotalScore();

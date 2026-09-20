@@ -57,14 +57,14 @@ public partial class RoundSetUp : ContentPage
         {
             if (holePicker.SelectedItem.ToString() == "9 Holes")
             {
-                string courseName = CoursePicker.SelectedItem.ToString();
-                Navigation.PushAsync(new Scoring(courseName));
+                string course = CoursePicker.SelectedItem.ToString();
+                Navigation.PushAsync(new Scoring(course));
 
             }
             else if (holePicker.SelectedItem.ToString() == "18 Holes")
             {
-                string courseName = CoursePicker.SelectedItem.ToString();
-                Navigation.PushAsync(new scoring18(courseName));
+                string course = CoursePicker.SelectedItem.ToString();
+                Navigation.PushAsync(new scoring18(course));
             }
         }
     }
