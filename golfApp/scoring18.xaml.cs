@@ -26,24 +26,24 @@ public partial class scoring18 : ContentPage
                     int holeNumber = int.Parse(parts[1].Trim());
                     int holePar = int.Parse(parts[2].Trim());
 
-                    if (holeNumber == 1) lblHole1Par.Text = "Par" + holePar.ToString();
-                    else if (holeNumber == 2) lblHole2Par.Text = "Par" + holePar.ToString();
-                    else if (holeNumber == 3) lblHole3Par.Text = "Par" + holePar.ToString();
-                    else if (holeNumber == 4) lblHole4Par.Text = "Par" + holePar.ToString();
-                    else if (holeNumber == 5) lblHole5Par.Text = "Par" + holePar.ToString();
-                    else if (holeNumber == 6) lblHole6Par.Text = "Par" + holePar.ToString();
-                    else if (holeNumber == 7) lblHole7Par.Text = "Par" + holePar.ToString();
-                    else if (holeNumber == 8) lblHole8Par.Text = "Par" + holePar.ToString();
-                    else if (holeNumber == 9) lblHole9Par.Text = "Par" + holePar.ToString();
-                    else if (holeNumber == 10) lblHole10Par.Text = "Par" + holePar.ToString();
-                    else if (holeNumber == 11) lblHole11Par.Text = "Par" + holePar.ToString();
-                    else if (holeNumber == 12) lblHole12Par.Text = "Par" + holePar.ToString();
-                    else if (holeNumber == 13) lblHole13Par.Text = "Par" + holePar.ToString();
-                    else if (holeNumber == 14) lblHole14Par.Text = " Par" + holePar.ToString();
-                    else if (holeNumber == 15) lblHole15Par.Text = " Par" + holePar.ToString();
-                    else if (holeNumber == 16) lblHole16Par.Text = " Par" + holePar.ToString();
-                    else if (holeNumber == 17) lblHole17Par.Text = " Par" + holePar.ToString();
-                    else if (holeNumber == 18) lblHole18Par.Text = " Par" + holePar.ToString();
+                    if (holeNumber == 1) lblHole1Par.Text = "Par " + holePar.ToString();
+                    else if (holeNumber == 2) lblHole2Par.Text = "Par " + holePar.ToString();
+                    else if (holeNumber == 3) lblHole3Par.Text = "Par " + holePar.ToString();
+                    else if (holeNumber == 4) lblHole4Par.Text = "Par " + holePar.ToString();
+                    else if (holeNumber == 5) lblHole5Par.Text = "Par " + holePar.ToString();
+                    else if (holeNumber == 6) lblHole6Par.Text = "Par " + holePar.ToString();
+                    else if (holeNumber == 7) lblHole7Par.Text = "Par " + holePar.ToString();
+                    else if (holeNumber == 8) lblHole8Par.Text = "Par " + holePar.ToString();
+                    else if (holeNumber == 9) lblHole9Par.Text = "Par " + holePar.ToString();
+                    else if (holeNumber == 10) lblHole10Par.Text = "Par " + holePar.ToString();
+                    else if (holeNumber == 11) lblHole11Par.Text = " Par " + holePar.ToString();
+                    else if (holeNumber == 12) lblHole12Par.Text = "Par " + holePar.ToString();
+                    else if (holeNumber == 13) lblHole13Par.Text = "Par " + holePar.ToString();
+                    else if (holeNumber == 14) lblHole14Par.Text = " Par " + holePar.ToString();
+                    else if (holeNumber == 15) lblHole15Par.Text = " Par " + holePar.ToString();
+                    else if (holeNumber == 16) lblHole16Par.Text = " Par " + holePar.ToString();
+                    else if (holeNumber == 17) lblHole17Par.Text = " Par " + holePar.ToString();
+                    else if (holeNumber == 18) lblHole18Par.Text = " Par " + holePar.ToString();
                 }
             }
         }

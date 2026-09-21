@@ -38,7 +38,7 @@
             </Picker.Items>
 
         </Picker>
-<!-- creates a button for the user to start the round -->
+
         <Button
             x:Name="btnRoundSart"
     BackgroundColor="DarkGreen"
