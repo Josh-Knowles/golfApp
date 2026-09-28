@@ -3,7 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="golfApp.myRounds"
              Title="myRounds">
-    <Grid BackgroundColor="DarkGreen">
+    <ScrollView>
+
+        <Grid BackgroundColor="DarkGreen">
         <VerticalStackLayout>
             <Label
                 x:Name="lblDate"
@@ -30,8 +32,9 @@
                 Text="scores"
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" />
-            
+
         </VerticalStackLayout>
-    </Grid>
-    
+        </Grid>
+    </ScrollView>
+
 </ContentPage>

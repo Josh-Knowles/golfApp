@@ -214,7 +214,7 @@ public partial class Scoring : ContentPage
         ToPar();
         String totalScore = lblTotalScore.Text;
         string toPar = lblToPar.Text;
-        string roundDate = DateTime.Now.ToString("MM/dd/yyyy");
+        string roundDate = DateTime.Now.ToString("dd-MM-yyyy");
 
         //string filePath = Path.Combine(FileSystem.AppDataDirectory, "myRounds.txt");
        // string lineToWrite = $"{courseName},{roundDate},{totalScore},{toPar}";

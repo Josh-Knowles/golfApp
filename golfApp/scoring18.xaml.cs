@@ -374,15 +374,11 @@ public partial class scoring18 : ContentPage
         ToPar();
         String totalScore = lblTotalScore.Text;
         string toPar = lblToPar.Text;     
-        string roundDate = DateTime.Now.ToString("MM/dd/yyyy");
+        string roundDate = DateTime.Now.ToString("dd-MM-yyyy");
 
-        string filePath = Path.Combine(FileSystem.AppDataDirectory, "myRounds.txt");
-        string lineToWrite = $"{courseName},{roundDate},{totalScore},{toPar}";
+       
+        
 
-        using (StreamWriter writer = new StreamWriter("myRounds.txt", true))
-        {
-            writer.WriteLine( lineToWrite);
-        }
         await Navigation.PushAsync(new myRounds(roundScores, roundDate, totalScore, toPar, courseName));
         
     }
