@@ -47,9 +47,10 @@ public partial class myRounds : ContentPage
             lblCourse.Text = "";
             
             string[] allRounds = previousRounds.Split('/');
+            Array.Reverse(allRounds); 
 
-           
-            foreach (string round in allRounds)
+
+        foreach (string round in allRounds)
             {
                 string[] parts = round.Split('*');
 

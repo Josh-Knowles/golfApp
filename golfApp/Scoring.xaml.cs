@@ -216,13 +216,65 @@ public partial class Scoring : ContentPage
         string toPar = lblToPar.Text;
         string roundDate = DateTime.Now.ToString("dd-MM-yyyy");
 
-        //string filePath = Path.Combine(FileSystem.AppDataDirectory, "myRounds.txt");
-       // string lineToWrite = $"{courseName},{roundDate},{totalScore},{toPar}";
-
-        //using (StreamWriter writer = new StreamWriter("myRounds.txt", true))
-        //{
-        //    writer.WriteLine(lineToWrite);
-       // }
+        
         await Navigation.PushAsync(new myRounds(roundScores, roundDate, totalScore, toPar, courseName));
     }
+
+    private void entryHole1_Unfocused_1(object sender, FocusEventArgs e)
+    {
+        TotalScore();
+        ToPar();
+    }
+
+    private void entryHole2_Unfocused(object sender, FocusEventArgs e)
+    {
+        TotalScore();
+        ToPar();
+    }
+
+    private void entryHole3_Unfocused(object sender, FocusEventArgs e)
+    {
+        TotalScore();
+        ToPar();
+    }
+
+
+    private void entryHole4_Unfocused(object sender, FocusEventArgs e)
+    {
+        TotalScore();
+        ToPar();
+    }
+
+    private void entryHole5_Unfocused(object sender, FocusEventArgs e)
+    {
+        TotalScore();
+        ToPar();
+    }
+
+    private void entryHole6_Unfocused(object sender, FocusEventArgs e)
+    {
+        TotalScore();
+        ToPar();
+    }
+
+
+    private void entryHole7_Unfocused(object sender, FocusEventArgs e)
+    {
+        TotalScore();
+        ToPar();
+    }
+
+    private void entryHole8_Unfocused(object sender, FocusEventArgs e)
+    {
+        TotalScore();
+        ToPar();
+    }
+
+    private void entryHole9_Unfocused(object sender, FocusEventArgs e)
+    {
+        TotalScore();
+        ToPar();
+    }
+
+    
 }

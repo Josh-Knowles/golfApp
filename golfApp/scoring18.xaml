@@ -122,6 +122,7 @@
    Padding="12"
    Text="Par 4"/>
                 <Entry x:Name="entryHole6" Grid.Column="2" 
+                       HorizontalOptions="Center"
    Placeholder="Enter Score" Keyboard="Numeric"
            Completed="entryHole6_Completed"/>
             </Grid>
@@ -392,7 +393,8 @@
                         TextColor="White"
                         Clicked="btnFinishRound_Clicked"/>
             </Grid>
-            
+            <BoxView HeightRequest="400" BackgroundColor="Transparent" />
+
 
 
 
