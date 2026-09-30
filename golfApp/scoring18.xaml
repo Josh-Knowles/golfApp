@@ -8,9 +8,10 @@
 
             <Grid BackgroundColor="DarkGreen">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.33*" />
-                    <ColumnDefinition Width="0.33*" />
-                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
                 </Grid.ColumnDefinitions>
                 <Label Grid.Column="0"
            HorizontalOptions="Center"
@@ -20,18 +21,26 @@
            HorizontalOptions="Center"
            Padding="12"
            Text="Par 4"/>
-                <Entry x:Name="entryHole1" Grid.Column="2" 
+                <Label x:Name="hole1Distance" Grid.Column="2"
+           HorizontalOptions="Center"
+           Padding="12"
+           Text="Distance:"/>
+                <Entry x:Name="entryHole1" Grid.Column="3" 
            HorizontalOptions="Center"
            Placeholder="Enter Score" Keyboard="Numeric"
-           Completed="entryHole1_Completed"/>
+           Completed="entryHole1_Completed"
+           Unfocused="entryHole1_Unfocused"/>
 
             </Grid>
+            
+            
 
             <Grid BackgroundColor="DarkGreen" >
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.33*" />
-                    <ColumnDefinition Width="0.33*" />
-                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
                 </Grid.ColumnDefinitions>
                 <Label Grid.Column="0"
    HorizontalOptions="Center"
@@ -41,17 +50,26 @@
    HorizontalOptions="Center"
    Padding="12"
    Text="Par 4"/>
-                <Entry x:Name="entryHole2" Grid.Column="2" 
+                <Label x:Name="hole2Distance" Grid.Column="2"
+   HorizontalOptions="Center"
+   Padding="12"
+   Text="Distance:"/>
+                <Entry x:Name="entryHole2" Grid.Column="3" 
    HorizontalOptions="Center"
    Placeholder="Enter Score" Keyboard="Numeric"
-   Completed="entryHole2_Completed"/>
+   Completed="entryHole2_Completed"
+           Unfocused="entryHole2_Unfocused"/>
             </Grid>
+            
+            
+            
 
             <Grid BackgroundColor="DarkGreen">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.33*" />
-                    <ColumnDefinition Width="0.33*" />
-                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
                 </Grid.ColumnDefinitions>
                 <Label Grid.Column="0"
    HorizontalOptions="Center"
@@ -61,17 +79,27 @@
    HorizontalOptions="Center"
    Padding="12"
    Text="Par 4"/>
-                <Entry x:Name="entryHole3" Grid.Column="2" 
+                <Label x:Name="hole3Distance" Grid.Column="2"
+   HorizontalOptions="Center"
+   Padding="12"
+   Text="Distance:"/>
+                <Entry x:Name="entryHole3" Grid.Column="3" 
    HorizontalOptions="Center"
    Placeholder="Enter Score" Keyboard="Numeric"
-           Completed="entryHole3_Completed"/>
+           Completed="entryHole3_Completed"
+           Unfocused="entryHole3_Unfocused"/>
             </Grid>
 
+            
+            
+            
+            
             <Grid BackgroundColor="DarkGreen">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.33*" />
-                    <ColumnDefinition Width="0.33*" />
-                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
                 </Grid.ColumnDefinitions>
                 <Label Grid.Column="0"
    HorizontalOptions="Center"
@@ -81,17 +109,27 @@
    HorizontalOptions="Center"
    Padding="12"
    Text="Par 3"/>
-                <Entry x:Name="entryHole4" Grid.Column="2" 
+                <Label x:Name="hole4Distance" Grid.Column="2"
+   HorizontalOptions="Center"
+   Padding="12"
+   Text="Distance:"/>
+                <Entry x:Name="entryHole4" Grid.Column="3" 
    HorizontalOptions="Center"
    Placeholder="Enter Score" Keyboard="Numeric"
-           Completed="entryHole4_Completed"/>
+           Completed="entryHole4_Completed"
+           Unfocused="entryHole4_Unfocused"/>
             </Grid>
 
+            
+            
+            
+            
             <Grid BackgroundColor="DarkGreen">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.33*" />
-                    <ColumnDefinition Width="0.33*" />
-                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
                 </Grid.ColumnDefinitions>
                 <Label Grid.Column="0"
    HorizontalOptions="Center"
@@ -101,17 +139,27 @@
    HorizontalOptions="Center"
    Padding="12"
    Text="Par 4"/>
-                <Entry x:Name="entryHole5" Grid.Column="2" 
+                <Label x:Name="hole5Distance" Grid.Column="2"
+   HorizontalOptions="Center"
+   Padding="12"
+   Text="Distance:"/>
+                <Entry x:Name="entryHole5" Grid.Column="3" 
    HorizontalOptions="Center"
    Placeholder="Enter Score" Keyboard="Numeric"
-           Completed="entryHole5_Completed"/>
+           Completed="entryHole5_Completed"
+           Unfocused="entryHole5_Unfocused"/>
             </Grid>
 
+            
+            
+            
+            
             <Grid BackgroundColor="DarkGreen">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.33*" />
-                    <ColumnDefinition Width="0.33*" />
-                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
                 </Grid.ColumnDefinitions>
                 <Label Grid.Column="0"
    HorizontalOptions="Center"
@@ -121,17 +169,27 @@
    HorizontalOptions="Center"
    Padding="12"
    Text="Par 4"/>
-                <Entry x:Name="entryHole6" Grid.Column="2" 
-                       HorizontalOptions="Center"
+                <Label x:Name="hole6Distance" Grid.Column="2"
+   HorizontalOptions="Center"
+   Padding="12"
+   Text="Distance:"/>
+                <Entry x:Name="entryHole6" Grid.Column="3" 
+          HorizontalOptions="Center"
    Placeholder="Enter Score" Keyboard="Numeric"
-           Completed="entryHole6_Completed"/>
+           Completed="entryHole6_Completed"
+          Unfocused="entryHole6_Unfocused"/>
             </Grid>
 
+            
+            
+            
+            
             <Grid BackgroundColor="DarkGreen">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.33*" />
-                    <ColumnDefinition Width="0.33*" />
-                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
                 </Grid.ColumnDefinitions>
                 <Label Grid.Column="0"
    HorizontalOptions="Center"
@@ -141,17 +199,27 @@
    HorizontalOptions="Center"
    Padding="12"
    Text="Par 3"/>
-                <Entry x:Name="entryHole7" Grid.Column="2" 
+                <Label x:Name="hole7Distance" Grid.Column="2"
+   HorizontalOptions="Center"
+   Padding="12"
+   Text="Distance:"/>
+                <Entry x:Name="entryHole7" Grid.Column="3" 
    HorizontalOptions="Center"
    Placeholder="Enter Score" Keyboard="Numeric"
-           Completed="entryHole7_Completed"/>
+           Completed="entryHole7_Completed"
+           Unfocused="entryHole7_Unfocused"/>
             </Grid>
 
+            
+            
+            
+            
             <Grid BackgroundColor="DarkGreen">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.33*" />
-                    <ColumnDefinition Width="0.33*" />
-                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
                 </Grid.ColumnDefinitions>
                 <Label Grid.Column="0"
    HorizontalOptions="Center"
@@ -161,17 +229,27 @@
    HorizontalOptions="Center"
    Padding="12"
    Text="Par 5"/>
-                <Entry x:Name="entryHole8" Grid.Column="2" 
+                <Label x:Name="hole8Distance" Grid.Column="2"
+   HorizontalOptions="Center"
+   Padding="12"
+   Text="Distance:"/>
+                <Entry x:Name="entryHole8" Grid.Column="3" 
    HorizontalOptions="Center"
    Placeholder="Enter Score" Keyboard="Numeric"
-           Completed="entryHole8_Completed"/>
+           Completed="entryHole8_Completed"
+           Unfocused="entryHole8_Unfocused"/>
             </Grid>
 
+            
+            
+            
+            
             <Grid BackgroundColor="DarkGreen">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.33*" />
-                    <ColumnDefinition Width="0.33*" />
-                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
                 </Grid.ColumnDefinitions>
                 <Label Grid.Column="0"
    HorizontalOptions="Center"
@@ -181,17 +259,27 @@
    HorizontalOptions="Center"
    Padding="12"
    Text="Par 4"/>
-                <Entry x:Name="entryHole9" Grid.Column="2" 
+                <Label x:Name="hole9Distance" Grid.Column="2"
+   HorizontalOptions="Center"
+   Padding="12"
+   Text="Distance:"/>
+                <Entry x:Name="entryHole9" Grid.Column="3" 
    HorizontalOptions="Center"
    Placeholder="Enter Score" Keyboard="Numeric"
-           Completed="entryHole9_Completed"/>
+           Completed="entryHole9_Completed"
+           Unfocused="entryHole9_Unfocused"/>
             </Grid>
-
+            
+            
+            
+            
             <Grid BackgroundColor="DarkGreen">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.33*" />
-                    <ColumnDefinition Width="0.33*" />
-                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
+                    
                 </Grid.ColumnDefinitions>
                 <Label Grid.Column="0"
                HorizontalOptions="Center"
@@ -201,18 +289,27 @@
                HorizontalOptions="Center"
                Padding="12"
                Text="Par 3"/>
-                <Entry x:Name="entryHole10" Grid.Column="2" 
+                <Label x:Name="hole10Distance" Grid.Column="2"
+                HorizontalOptions="Center"
+                Padding="12"
+                Text="Distance:"/>  
+                <Entry x:Name="entryHole10" Grid.Column="3" 
                HorizontalOptions="Center"
                Placeholder="Enter Score" Keyboard="Numeric"
-               Completed="entryHole10_Completed"/>
+               Completed="entryHole10_Completed"
+                       Unfocused="entryHole10_Unfocused_1"/>
             </Grid>
 
+            
+            
+            
 
             <Grid BackgroundColor="DarkGreen">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.33*" />
-                    <ColumnDefinition Width="0.33*" />
-                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
                 </Grid.ColumnDefinitions>
                 <Label Grid.Column="0"
                HorizontalOptions="Center"
@@ -222,18 +319,27 @@
                HorizontalOptions="Center"
                Padding="12"
                Text="Par 5"/>
-                <Entry x:Name="entryHole11" Grid.Column="2" 
+                <Label x:Name="hole11Distance" Grid.Column="2"
+                HorizontalOptions="Center"
+                Padding="12"
+                Text="Distance:"/>  
+                <Entry x:Name="entryHole11" Grid.Column="3" 
                HorizontalOptions="Center"
                Placeholder="Enter Score" Keyboard="Numeric"
-               Completed="entryHole11_Completed"/>
+               Completed="entryHole11_Completed"
+                       Unfocused="entryHole11_Unfocused"/>
             </Grid>
 
+            
+            
+            
 
             <Grid BackgroundColor="DarkGreen">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.33*" />
-                    <ColumnDefinition Width="0.33*" />
-                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
                 </Grid.ColumnDefinitions>
                 <Label Grid.Column="0"
                HorizontalOptions="Center"
@@ -243,18 +349,28 @@
                HorizontalOptions="Center"
                Padding="12"
                Text="Par 4"/>
-                <Entry x:Name="entryHole12" Grid.Column="2" 
+                <Label x:Name="hole12Distance" Grid.Column="2"
+                HorizontalOptions="Center"
+                Padding="12"
+                Text="Distance:"/>  
+                <Entry x:Name="entryHole12" Grid.Column="3" 
                HorizontalOptions="Center"
                Placeholder="Enter Score" Keyboard="Numeric"
-               Completed="entryHole12_Completed"/>
+               Completed="entryHole12_Completed"
+                       Unfocused="entryHole12_Unfocused"/>
             </Grid>
 
+            
+            
+            
+            
 
             <Grid BackgroundColor="DarkGreen">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.33*" />
-                    <ColumnDefinition Width="0.33*" />
-                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
                 </Grid.ColumnDefinitions>
                 <Label Grid.Column="0"
                HorizontalOptions="Center"
@@ -264,18 +380,27 @@
                HorizontalOptions="Center"
                Padding="12"
                Text="Par 4"/>
-                <Entry x:Name="entryHole13" Grid.Column="2" 
+                <Label x:Name="hole13Distance" Grid.Column="2"
+                HorizontalOptions="Center"
+                Padding="12"
+                Text="Distance:"/>  
+                <Entry x:Name="entryHole13" Grid.Column="3" 
                HorizontalOptions="Center"
                Placeholder="Enter Score" Keyboard="Numeric"
-               Completed="entryHole13_Completed"/>
+               Completed="entryHole13_Completed"
+                       Unfocused="entryHole13_Unfocused"/>
             </Grid>
 
 
+            
+            
+            
             <Grid BackgroundColor="DarkGreen">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.33*" />
-                    <ColumnDefinition Width="0.33*" />
-                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
                 </Grid.ColumnDefinitions>
                 <Label Grid.Column="0"
                HorizontalOptions="Center"
@@ -285,18 +410,28 @@
                HorizontalOptions="Center"
                Padding="12"
                Text="Par 3"/>
-                <Entry x:Name="entryHole14" Grid.Column="2" 
+                <Label x:Name="hole14Distance" Grid.Column="2"
+                HorizontalOptions="Center"
+                Padding="12"
+                Text="Distance:"/>  
+                <Entry x:Name="entryHole14" Grid.Column="3" 
                HorizontalOptions="Center"
                Placeholder="Enter Score" Keyboard="Numeric"
-               Completed="entryHole14_Completed"/>
+               Completed="entryHole14_Completed"
+                       Unfocused="entryHole14_Unfocused"/>
             </Grid>
 
+            
+            
+            
+            
 
             <Grid BackgroundColor="DarkGreen">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.33*" />
-                    <ColumnDefinition Width="0.33*" />
-                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
                 </Grid.ColumnDefinitions>
                 <Label Grid.Column="0"
                HorizontalOptions="Center"
@@ -306,18 +441,28 @@
                HorizontalOptions="Center"
                Padding="12"
                Text="Par 5"/>
-                <Entry x:Name="entryHole15" Grid.Column="2" 
+                <Label x:Name="hole15Distance" Grid.Column="2"
+                HorizontalOptions="Center"
+                Padding="12"
+                Text="Distance:"/>  
+                <Entry x:Name="entryHole15" Grid.Column="3" 
                HorizontalOptions="Center"
                Placeholder="Enter Score" Keyboard="Numeric"
-               Completed="entryHole15_Completed"/>
+               Completed="entryHole15_Completed"
+                       Unfocused="entryHole15_Unfocused"/>
             </Grid>
 
+            
+            
+            
+            
 
             <Grid BackgroundColor="DarkGreen">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.33*" />
-                    <ColumnDefinition Width="0.33*" />
-                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
                 </Grid.ColumnDefinitions>
                 <Label Grid.Column="0"
                HorizontalOptions="Center"
@@ -327,17 +472,27 @@
                HorizontalOptions="Center"
                Padding="12"
                Text="Par 4"/>
-                <Entry x:Name="entryHole16" Grid.Column="2" 
+                <Label x:Name="hole16Distance" Grid.Column="2"
+                HorizontalOptions="Center"
+                Padding="12"
+                Text="Distance:"/>  
+                <Entry x:Name="entryHole16" Grid.Column="3" 
                HorizontalOptions="Center"
                Placeholder="Enter Score" Keyboard="Numeric"
-               Completed="entryHole16_Completed"/>
+               Completed="entryHole16_Completed"
+                       Unfocused="entryHole16_Unfocused"/>
             </Grid>
 
+            
+            
+            
+            
             <Grid BackgroundColor="DarkGreen">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.33*" />
-                    <ColumnDefinition Width="0.33*" />
-                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
                 </Grid.ColumnDefinitions>
                 <Label Grid.Column="0"
                HorizontalOptions="Center"
@@ -347,16 +502,27 @@
                HorizontalOptions="Center"
                Padding="12"
                Text="Par 4"/>
-                <Entry x:Name="entryHole17" Grid.Column="2" 
+                <Label x:Name="hole17Distance" Grid.Column="2"
+                HorizontalOptions="Center"
+                Padding="12"
+                Text="Distance:"/>  
+                <Entry x:Name="entryHole17" Grid.Column="3" 
                HorizontalOptions="Center"
                Placeholder="Enter Score" Keyboard="Numeric"
-               Completed="entryHole17_Completed"/>
+               Completed="entryHole17_Completed"
+                       Unfocused="entryHole17_Unfocused"/>
             </Grid>
+            
+            
+            
+            
+            
             <Grid BackgroundColor="DarkGreen">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.33*" />
-                    <ColumnDefinition Width="0.33*" />
-                    <ColumnDefinition Width="0.33*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.25*" />
                 </Grid.ColumnDefinitions>
                 <Label Grid.Column="0"
                HorizontalOptions="Center"
@@ -366,12 +532,20 @@
                HorizontalOptions="Center"
                Padding="12"
                Text="Par 4"/>
-                <Entry x:Name="entryHole18" Grid.Column="2" 
+                <Label x:Name="hole18Distance" Grid.Column="2"
+                HorizontalOptions="Center"
+                Padding="12"
+                Text="Distance:"/>  
+                <Entry x:Name="entryHole18" Grid.Column="3 " 
                HorizontalOptions="Center"
                Placeholder="Enter Score" Keyboard="Numeric"
-               Completed="entryHole18_Completed"/>
+               Completed="entryHole18_Completed"
+                       Unfocused="entryHole18_Unfocused"/>
             </Grid>
 
+            
+            
+            
             <Grid BackgroundColor="DarkGreen">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="0.5*" />

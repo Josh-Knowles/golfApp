@@ -3,14 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="golfApp.RoundSetUp"
              Title="RoundSetUp">
-    <!-- sets the layout to vertical stack -->
+    
     <VerticalStackLayout>
-        <!-- create a label for the course selection, and makes a picker to select the oure and amount of rounds -->
+       
         <Label 
-            Text="Select Course"
+            Text="Select Course↓"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-        <Picker x:Name="CoursePicker" 
+        <Picker x:Name="CoursePicker"             
+                WidthRequest="130"
                 VerticalOptions="Center" 
                 HorizontalOptions="Center"
                 SelectedIndexChanged="CoursePicker_SelectedIndexChanged">
@@ -25,14 +26,17 @@
         </Picker>
 
         <Label 
-    Text="Amount of holes"
+    Text="Amount of holes↓"
     VerticalOptions="Center" 
     HorizontalOptions="Center" />
         <Picker x:Name="holePicker" 
+        WidthRequest="130"     
+                
         VerticalOptions="Center" 
         HorizontalOptions="Center"
         SelectedIndexChanged="holePicker_SelectedIndexChanged" >
             <Picker.Items>
+                
                 <x:String>9 Holes</x:String>
                 <x:String>18 Holes</x:String>
             </Picker.Items>

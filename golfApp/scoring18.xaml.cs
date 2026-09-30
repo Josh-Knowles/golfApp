@@ -10,6 +10,7 @@ public partial class scoring18 : ContentPage
         courseName = course;
         InitializeComponent();
         LoadCoursePars();
+        loadHoledistances();
 
     }
 
@@ -46,6 +47,42 @@ public partial class scoring18 : ContentPage
                     else if (holeNumber == 16) lblHole16Par.Text = " Par " + holePar.ToString();
                     else if (holeNumber == 17) lblHole17Par.Text = " Par " + holePar.ToString();
                     else if (holeNumber == 18) lblHole18Par.Text = " Par " + holePar.ToString();
+                }
+            }
+        }
+    }
+    public void loadHoledistances()
+    {
+        using (StreamReader reader = new StreamReader(FileSystem.OpenAppPackageFileAsync("golf.txt").Result))
+        {
+            string line;
+            while ((line = reader.ReadLine()) != null)
+            {
+                if (string.IsNullOrWhiteSpace(line)) continue;
+                string[] parts = line.Split(',');
+                string name = parts[0].Trim();
+                if (name == courseName)
+                {
+                    int holeNumber = int.Parse(parts[1].Trim());
+                    int holeDistance = int.Parse(parts[3].Trim());
+                    if (holeNumber == 1) hole1Distance.Text = holeDistance.ToString() + " m";
+                    else if (holeNumber == 2) hole2Distance.Text = holeDistance.ToString() + " m";
+                    else if (holeNumber == 3) hole3Distance.Text = holeDistance.ToString() + " m";
+                    else if (holeNumber == 4) hole4Distance.Text = holeDistance.ToString() + " m";
+                    else if (holeNumber == 5) hole5Distance.Text = holeDistance.ToString() + " m";
+                    else if (holeNumber == 6) hole6Distance.Text = holeDistance.ToString() + " m";
+                    else if (holeNumber == 7) hole7Distance.Text = holeDistance.ToString() + " m";
+                    else if (holeNumber == 8) hole8Distance.Text = holeDistance.ToString() + " m";
+                    else if (holeNumber == 9) hole9Distance.Text = holeDistance.ToString() + " m";
+                    else if (holeNumber == 10) hole10Distance.Text = holeDistance.ToString() + " m";
+                    else if (holeNumber == 11) hole11Distance.Text = holeDistance.ToString() + " m";
+                    else if (holeNumber == 12) hole12Distance.Text = holeDistance.ToString() + " m";
+                    else if (holeNumber == 13) hole13Distance.Text = holeDistance.ToString() + " m";
+                    else if (holeNumber == 14) hole14Distance.Text = holeDistance.ToString() + " m";
+                    else if (holeNumber == 15) hole15Distance.Text = holeDistance.ToString() + " m";
+                    else if (holeNumber == 16) hole16Distance.Text = holeDistance.ToString() + " m";
+                    else if (holeNumber == 17) hole17Distance.Text = holeDistance.ToString() + " m";
+                    else if (holeNumber == 18) hole18Distance.Text = holeDistance.ToString() + " m";
                 }
             }
         }
@@ -381,5 +418,117 @@ public partial class scoring18 : ContentPage
 
         await Navigation.PushAsync(new myRounds(roundScores, roundDate, totalScore, toPar, courseName));
         
+    }
+
+  
+
+    private void entryHole1_Unfocused(object sender, FocusEventArgs e)
+    {
+        ToPar();
+        TotalScore();
+
+    }
+
+    private void entryHole2_Unfocused(object sender, FocusEventArgs e)
+    {
+        ToPar();
+        TotalScore();
+
+    }
+
+    private void entryHole3_Unfocused(object sender, FocusEventArgs e)
+    {
+        ToPar();
+        TotalScore();
+    }
+
+    private void entryHole4_Unfocused(object sender, FocusEventArgs e)
+    {
+        ToPar();
+        TotalScore();
+    }
+
+    private void entryHole5_Unfocused(object sender, FocusEventArgs e)
+    {
+        ToPar();
+        TotalScore();
+    }
+
+    private void entryHole6_Unfocused(object sender, FocusEventArgs e)
+    {
+        ToPar();
+        TotalScore();
+    }
+
+    private void entryHole7_Unfocused(object sender, FocusEventArgs e)
+    {
+        ToPar();
+        TotalScore();
+    }
+
+    private void entryHole8_Unfocused(object sender, FocusEventArgs e)
+    {
+        ToPar();
+        TotalScore();
+    }
+
+    private void entryHole9_Unfocused(object sender, FocusEventArgs e)
+    {
+        ToPar();
+        TotalScore();
+    }
+
+    private void entryHole10_Unfocused_1(object sender, FocusEventArgs e)
+    {
+        ToPar();
+        TotalScore();
+    }
+
+    private void entryHole11_Unfocused(object sender, FocusEventArgs e)
+    {
+        ToPar();
+        TotalScore();
+    }
+
+    private void entryHole12_Unfocused(object sender, FocusEventArgs e)
+    {
+        ToPar();
+        TotalScore();
+    }
+
+    private void entryHole13_Unfocused(object sender, FocusEventArgs e)
+    {
+        ToPar();
+        TotalScore();
+    }
+
+    private void entryHole14_Unfocused(object sender, FocusEventArgs e)
+    {
+        ToPar();
+        TotalScore();
+    }
+
+    private void entryHole15_Unfocused(object sender, FocusEventArgs e)
+    {
+        ToPar();
+        TotalScore();
+    }
+
+    private void entryHole16_Unfocused(object sender, FocusEventArgs e)
+    {
+        ToPar();
+        TotalScore();
+    }
+
+    private void entryHole17_Unfocused(object sender, FocusEventArgs e)
+    {
+        ToPar();
+        TotalScore();
+    }
+
+    private void entryHole18_Unfocused(object sender, FocusEventArgs e)
+    {
+        ToPar();
+        TotalScore();
     }
 }

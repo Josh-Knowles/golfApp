@@ -8,7 +8,8 @@ public partial class Scoring : ContentPage
 		InitializeComponent();
 		courseName = course;
         LoadCoursePars();
-	}
+        loadHoledistances();
+    }
     public void LoadCoursePars()
     {
         using (StreamReader reader = new StreamReader(FileSystem.OpenAppPackageFileAsync("golf.txt").Result))
@@ -34,6 +35,34 @@ public partial class Scoring : ContentPage
                     else if (holeNumber == 8) lblHole8Par.Text = "Par " + holePar.ToString();
                     else if (holeNumber == 9) lblHole9Par.Text = "Par " + holePar.ToString();
 
+                }
+            }
+        }
+    }
+
+    public void loadHoledistances()
+    {
+        using (StreamReader reader = new StreamReader(FileSystem.OpenAppPackageFileAsync("golf.txt").Result))
+        {
+            string line;
+            while ((line = reader.ReadLine()) != null)
+            {
+                if (string.IsNullOrWhiteSpace(line)) continue;
+                string[] parts = line.Split(',');
+                string name = parts[0].Trim();
+                if (name == courseName)
+                {
+                    int holeNumber = int.Parse(parts[1].Trim());
+                    int holeDistance = int.Parse(parts[3].Trim());
+                    if (holeNumber == 1) hole1Distance.Text = holeDistance.ToString() + " m";
+                    else if (holeNumber == 2) hole2Distance.Text = holeDistance.ToString() + " m";
+                    else if (holeNumber == 3) hole3Distance.Text = holeDistance.ToString() + " m";
+                    else if (holeNumber == 4) hole4Distance.Text = holeDistance.ToString() + " m";
+                    else if (holeNumber == 5) hole5Distance.Text = holeDistance.ToString() + " m";
+                    else if (holeNumber == 6) hole6Distance.Text = holeDistance.ToString() + " m";
+                    else if (holeNumber == 7) hole7Distance.Text = holeDistance.ToString() + " m";
+                    else if (holeNumber == 8) hole8Distance.Text = holeDistance.ToString() + " m";
+                    else if (holeNumber == 9) hole9Distance.Text = holeDistance.ToString() + " m";
                 }
             }
         }
