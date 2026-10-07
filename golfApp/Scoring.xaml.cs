@@ -67,16 +67,30 @@ public partial class Scoring : ContentPage
             }
         }
     }
-    private void entryHole1_Completed(object sender, EventArgs e)
+    private async void entryHole1_Completed(object sender, EventArgs e)
     {
-        TotalScore();
-        ToPar();
+        try
+        {
+            TotalScore();
+            ToPar();
+        }
+        catch
+        {
+            await DisplayAlertAsync("Error", "Please enter a valid score", "OK");
+        }
     }
 
-    private void entryHole2_Completed(object sender, EventArgs e)
+    private async void entryHole2_Completed(object sender, EventArgs e)
     {
-        TotalScore();
-        ToPar();
+        try
+        {
+            TotalScore();
+            ToPar();
+        }
+        catch
+        {
+            await DisplayAlertAsync("Error", "Please enter a valid score", "OK");
+        }
     }
     private int TotalScore()
     {
@@ -116,6 +130,7 @@ public partial class Scoring : ContentPage
 
     private int ToPar()
     {
+        
         int toPar = 0;
         int scoreHole1 = Convert.ToInt32(entryHole1.Text);
         if (scoreHole1 != 0)
@@ -184,125 +199,245 @@ public partial class Scoring : ContentPage
     }
 
 
-    private void entryHole3_Completed(object sender, EventArgs e)
+    private async void entryHole3_Completed(object sender, EventArgs e)
     {
-        TotalScore();
-        ToPar();
+        try
+        {
+            TotalScore();
+            ToPar();
+        }
+        catch
+        {
+            await DisplayAlertAsync("Error", "Please enter a valid score", "OK");
+        }
     }
 
-    private void entryHole4_Completed(object sender, EventArgs e)
+    private async void entryHole4_Completed(object sender, EventArgs e)
     {
-        TotalScore();
-        ToPar();
+        try
+        {
+            TotalScore();
+            ToPar();
+        }
+        catch
+        {
+            await DisplayAlertAsync("Error", "Please enter a valid score", "OK");
+        }
     }
 
-    private void entryHole5_Completed(object sender, EventArgs e)
+    private async void entryHole5_Completed(object sender, EventArgs e)
     {
-        TotalScore();
-        ToPar();
+        try
+        {
+            TotalScore();
+            ToPar();
+        }
+        catch
+        {
+            await DisplayAlertAsync("Error", "Please enter a valid score", "OK");
+        }
     }
 
-    private void entryHole6_Completed(object sender, EventArgs e)
+    private async void entryHole6_Completed(object sender, EventArgs e)
     {
-        TotalScore();
-        ToPar();
+        try
+        {
+            TotalScore();
+            ToPar();
+        }
+        catch
+        {
+            await DisplayAlertAsync("Error", "Please enter a valid score", "OK");
+        }
     }
 
-    private void entryHole7_Completed(object sender, EventArgs e)
+    private async void entryHole7_Completed(object sender, EventArgs e)
     {
-        TotalScore();
-        ToPar();
+        try
+        {
+            TotalScore();
+            ToPar();
+        }
+        catch
+        {
+            await DisplayAlertAsync("Error", "Please enter a valid score", "OK");
+        }
     }
 
-    private void entryHole8_Completed(object sender, EventArgs e)
+    private async void entryHole8_Completed(object sender, EventArgs e)
     {
-        TotalScore();
-        ToPar();
+        try
+        {
+            TotalScore();
+            ToPar();
+        }
+        catch
+        {
+            await DisplayAlertAsync("Error", "Please enter a valid score", "OK");
+        }
     }
 
-    private void entryHole9_Completed(object sender, EventArgs e)
+    private async void entryHole9_Completed(object sender, EventArgs e)
     {
-        TotalScore();
-        ToPar();
+        try
+        {
+            TotalScore();
+            ToPar();
+        }
+        catch
+        {
+            await DisplayAlertAsync("Error", "Please enter a valid score", "OK");
+        }
     }
 
     private async void btnFinishRound_Clicked(object sender, EventArgs e)
     {
-        int[] roundScores = new int[9];
-        roundScores[0] = Convert.ToInt32(entryHole1.Text);
-        roundScores[1] = Convert.ToInt32(entryHole2.Text);
-        roundScores[2] = Convert.ToInt32(entryHole3.Text);
-        roundScores[3] = Convert.ToInt32(entryHole4.Text);
-        roundScores[4] = Convert.ToInt32(entryHole5.Text);
-        roundScores[5] = Convert.ToInt32(entryHole6.Text);
-        roundScores[6] = Convert.ToInt32(entryHole7.Text);
-        roundScores[7] = Convert.ToInt32(entryHole8.Text);
-        roundScores[8] = Convert.ToInt32(entryHole9.Text);
-       
-        TotalScore();
-        ToPar();
-        String totalScore = lblTotalScore.Text;
-        string toPar = lblToPar.Text;
-        string roundDate = DateTime.Now.ToString("dd-MM-yyyy");
+        try
+        {
+            int[] roundScores = new int[9];
+            roundScores[0] = Convert.ToInt32(entryHole1.Text);
+            roundScores[1] = Convert.ToInt32(entryHole2.Text);
+            roundScores[2] = Convert.ToInt32(entryHole3.Text);
+            roundScores[3] = Convert.ToInt32(entryHole4.Text);
+            roundScores[4] = Convert.ToInt32(entryHole5.Text);
+            roundScores[5] = Convert.ToInt32(entryHole6.Text);
+            roundScores[6] = Convert.ToInt32(entryHole7.Text);
+            roundScores[7] = Convert.ToInt32(entryHole8.Text);
+            roundScores[8] = Convert.ToInt32(entryHole9.Text);
 
-        
-        await Navigation.PushAsync(new myRounds(roundScores, roundDate, totalScore, toPar, courseName));
+            TotalScore();
+            ToPar();
+            String totalScore = lblTotalScore.Text;
+            string toPar = lblToPar.Text;
+            string roundDate = DateTime.Now.ToString("dd-MM-yyyy");
+
+
+            await Navigation.PushAsync(new myRounds(roundScores, roundDate, totalScore, toPar, courseName));
+        }
+        catch
+        {
+            await DisplayAlertAsync("Error", "Please enter a valid score", "OK");
+        }
+
     }
 
-    private void entryHole1_Unfocused_1(object sender, FocusEventArgs e)
+    private async void entryHole1_Unfocused_1(object sender, FocusEventArgs e)
     {
-        TotalScore();
-        ToPar();
+        try
+        {
+            TotalScore();
+            ToPar();
+        }
+        catch
+        {
+            await DisplayAlertAsync("Error", "Please enter a valid score", "OK");
+        }
     }
 
-    private void entryHole2_Unfocused(object sender, FocusEventArgs e)
+    private async void entryHole2_Unfocused(object sender, FocusEventArgs e)
     {
-        TotalScore();
-        ToPar();
+        try
+        {
+            TotalScore();
+            ToPar();
+        }
+        catch
+        {
+            await DisplayAlertAsync("Error", "Please enter a valid score", "OK");
+        }
     }
 
-    private void entryHole3_Unfocused(object sender, FocusEventArgs e)
+    private async void entryHole3_Unfocused(object sender, FocusEventArgs e)
     {
-        TotalScore();
-        ToPar();
-    }
-
-
-    private void entryHole4_Unfocused(object sender, FocusEventArgs e)
-    {
-        TotalScore();
-        ToPar();
-    }
-
-    private void entryHole5_Unfocused(object sender, FocusEventArgs e)
-    {
-        TotalScore();
-        ToPar();
-    }
-
-    private void entryHole6_Unfocused(object sender, FocusEventArgs e)
-    {
-        TotalScore();
-        ToPar();
+        try
+        {
+            TotalScore();
+            ToPar();
+        }
+        catch
+        {
+            await DisplayAlertAsync("Error", "Please enter a valid score", "OK");
+        }
     }
 
 
-    private void entryHole7_Unfocused(object sender, FocusEventArgs e)
+    private async void entryHole4_Unfocused(object sender, FocusEventArgs e)
     {
-        TotalScore();
-        ToPar();
+        try
+        {
+            TotalScore();
+            ToPar();
+        }
+        catch
+        {
+            await DisplayAlertAsync("Error", "Please enter a valid score", "OK");
+        }
     }
 
-    private void entryHole8_Unfocused(object sender, FocusEventArgs e)
+    private async void entryHole5_Unfocused(object sender, FocusEventArgs e)
     {
-        TotalScore();
-        ToPar();
+        try
+        {
+            TotalScore();
+            ToPar();
+        }
+        catch
+        {
+            await DisplayAlertAsync("Error", "Please enter a valid score", "OK");
+        }
     }
 
-    private void entryHole9_Unfocused(object sender, FocusEventArgs e)
+    private async void entryHole6_Unfocused(object sender, FocusEventArgs e)
     {
-        TotalScore();
-        ToPar();
+        try
+        {
+            TotalScore();
+            ToPar();
+        }
+        catch
+        {
+            await DisplayAlertAsync("Error", "Please enter a valid score", "OK");
+        }
+    }
+
+
+    private async void entryHole7_Unfocused(object sender, FocusEventArgs e)
+    {
+        try
+        {
+            TotalScore();
+            ToPar();
+        }
+        catch
+        {
+            await DisplayAlertAsync("Error", "Please enter a valid score", "OK");
+        }
+    }
+
+    private async void entryHole8_Unfocused(object sender, FocusEventArgs e)
+    {
+        try
+        {
+            TotalScore();
+            ToPar();
+        }
+        catch
+        {
+            await DisplayAlertAsync("Error", "Please enter a valid score", "OK");
+        }
+    }
+
+    private async void entryHole9_Unfocused(object sender, FocusEventArgs e)
+    {
+        try
+        {
+            TotalScore();
+            ToPar();
+        }
+        catch
+        {
+            await DisplayAlertAsync("Error", "Please enter a valid score", "OK");
+        }
     }
 
     

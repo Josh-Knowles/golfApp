@@ -1,4 +1,5 @@
-﻿using SQLite;
+﻿
+using SQLite;
 
 namespace golfApp
 {
@@ -10,6 +11,7 @@ namespace golfApp
         public MainPage()
         {
             InitializeComponent();
+            
         }
 
         // takes the user to the round set up page when they click the button

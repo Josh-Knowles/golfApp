@@ -1,40 +1,56 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="golfApp.MainPage">
-  <!-- define the layout for the vertical layout -->
-    <VerticalStackLayout
-        Padding="30"
-        Spacing="25"
-        VerticalOptions="Center">
-<!-- create the title label, round start button and my rounds button to go to their conected pages -->
-        <Label
-            Text="Golf Score Tracker"
-            x:Name="lblTitle"
-            FontSize="40"
-            HorizontalOptions="Center"
-            HorizontalTextAlignment="Center"
-            FontAttributes="Bold"/>
-        <Button
-            BackgroundColor="DarkGreen"
-            Text="Start Round"
-            x:Name="StartRoundButton"
-            TextColor="White"
-            HeightRequest="60"
-            FontSize="24"
-            Clicked="StartRoundButton_Clicked"
-             />
-
+             x:Class="golfApp.MainPage"
+             
+             
+             >
+    <Grid>
         
-        <Button
-            BackgroundColor="DarkGreen"
-            x:Name="btnMyRounds"
-            Text="My Rounds"
-            TextColor="White"
-            HeightRequest="60"
-            FontSize="24"
-            Clicked="btnMyRounds_Clicked"/>
+        
 
-    </VerticalStackLayout>
+        <VerticalStackLayout
+    Padding="30"
+    Spacing="25"
+            
+    VerticalOptions="Center">
 
+            <Label
+        Text="Golf Score 
+                Tracker"
+        x:Name="lblTitle"
+                FontFamily=""
+                FontSize="50"
+        HorizontalOptions="Center"
+        HorizontalTextAlignment="Center"
+        FontAttributes="Bold"/>
+            <Button
+        BackgroundColor="DarkGreen"
+        Text="Start Round"
+        x:Name="StartRoundButton"
+        TextColor="White"
+        HeightRequest="60"
+        FontSize="24"
+        Clicked="StartRoundButton_Clicked"
+         />
+
+
+            <Button
+        BackgroundColor="DarkGreen"
+        x:Name="btnMyRounds"
+        Text="My Rounds"
+        TextColor="White"
+        HeightRequest="60"
+        FontSize="24"
+        Clicked="btnMyRounds_Clicked"/>
+
+        </VerticalStackLayout>
+
+
+    </Grid>
+
+
+    
+
+    
 </ContentPage>
